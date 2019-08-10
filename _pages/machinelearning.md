@@ -6,8 +6,6 @@ author_profile: true
 header:
   image: "/images/bigdata.jpg"
 ---
-Projects
-
 
 {% include base_path %}
 {% include group-by-array collection=site.posts field="tags" %}
