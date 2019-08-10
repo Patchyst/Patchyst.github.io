@@ -1,7 +1,7 @@
 ---
 layout: archive
 permalink: /cyber-security/
-title: "Cyber Security and Encryption Posts by tags"
+title: "Cyber Security and Encryption Projects by tags"
 author_profile: true
 header:
   image: "/images/cyber.jpg"
