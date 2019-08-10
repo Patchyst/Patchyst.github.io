@@ -1,10 +1,10 @@
 ---
 layout: archive
-permalink: /Coding-Projects/
-title: "Programming Posts by tags"
+permalink: /machine-learning/
+title: "Machine Learning Posts by tags"
 author_profile: true
 header:
-  image: "/images/machinebanner.jpg"
+  image: "/images/bigdata.jpg"
 ---
 
 {% include group-by-array collection=site.posts field="tags" %}
