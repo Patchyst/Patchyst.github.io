@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Patrick Story"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : "images/profile_photo_two.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Programming and Software Development Portfolio"
   location         : "Charlotte NC"
   email            :
