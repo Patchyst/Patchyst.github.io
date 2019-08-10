@@ -6,8 +6,6 @@ main:
     url: /machine-learning/
   - title: "Cyber Security"
     url: /cyber-security/
-  # - title: "About"
-  #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
