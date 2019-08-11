@@ -35,3 +35,7 @@ The following are common boolean operators:
 * OR, check if at least one of the statements are True
 * NOT, changes the boolean values of a statement, true to false or false to true
 The term "logic gate" originates from how electronic circuits handle booleans, on(true) off(false).
+### And gates
+And gates take in two bits as an input and produce a single bit as an output. If both input bits are 1s then the output bit is a 1.
+Just like the And operator if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an and logic gate is often written in a D shape.
+![and-gate](/images/andgate.jpg){:class="img-responsive"}
