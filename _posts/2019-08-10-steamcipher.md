@@ -39,3 +39,6 @@ The term "logic gate" originates from how electronic circuits handle booleans, o
 And gates take in two bits as an input and produce a single bit as an output. If both input bits are 1s then the output bit is a 1.
 Just like the And operator if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an and logic gate is often written in a D.
 ![and-gate](/images/andgate.jpg){:class="img-responsive"}
+### Or Gates
+Or gates just like and gates take in two bits as an input and produce 1 bit as an output. However, there is one key difference, I like to think of an Or gate as the opposite of an and gate. In an or gate if any inputs are a 1(true) then the output will be 1(true), but if both input are 0(false) then the output with be 0(false). On paper the or gate is written similarly to the and gate:
+![or-gate](/images/orgate.jpg){:class="img-responsive"}
