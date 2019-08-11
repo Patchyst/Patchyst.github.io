@@ -11,7 +11,7 @@ excerpt: "Learn all about Binary Numbers, this will serve as prerequisite to mak
   To some binary numbers may seem shrouded in mystery and secrecy, a classified code that only natural born
   geniuses can understand. However, binary numbers can be boiled to two simple values that even someone with
   zero knowledge of computer hardware and software can understand.
-  *if you already have a good idea of what Binary numbers are you can skip the next three sections*
+
 
 
 ## What are Binary Numbers?
