@@ -13,6 +13,6 @@ excerpt: "A secure Stream Cipher that utilizes a XOR gate to create an encrypted
   zero knowledge of computer hardware and software can understand
 
 
-## What are Binary Numbers? *italics*
+## What are Binary Numbers?
     So what is a Binary Number? Well, as I'm sure you've seen before, a 1 or 0, but what does that really
-    mean? *italics*
+    mean?
