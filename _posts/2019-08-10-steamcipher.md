@@ -7,3 +7,5 @@ header:
 excerpt: "A secure Stream Cipher that utilizes a XOR gate to create an encrypted code exchange"
 ---
 # Encryption Project: XOR Stream Cipher
+## Heading 1
+### Heading 2
