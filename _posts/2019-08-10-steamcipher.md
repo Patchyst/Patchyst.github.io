@@ -34,3 +34,4 @@ The following are common boolean operators:
 * AND, checks if both statements are True
 * OR, check if at least one of the statements are True
 * NOT, changes the boolean values of a statement, true to false or false to true
+The term "logic gate" originates from how electronic circuits handle booleans, on(true) off(false).
