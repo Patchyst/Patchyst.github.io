@@ -43,5 +43,5 @@ Just like the And operator used in regular Python if both conditions are True th
 Or gates just like And gates take in two bits as an input and produce 1 bit as an output. However, there is one key difference, I like to think of an Or gate as the opposite of an and gate. In an Or gate if any inputs are a 1(true) then the output will be 1(true), but if both input are 0(false) then the output with be 0(false). On paper:
 ![or-gate](/images/orgate.jpg){:class="img-responsive"}
 ### Not Gates
-Unlike the others the Not gate only takes in **one** input and produces just **one** output. Out of all the Logic gates this one is my favorite because of it's simplicity. It takes in one bit and the output is the inverse bit. For example, if you passed in a 1(true) the output would be 0(false)
+Unlike the others the Not gate only takes in **one** input and produces just **one** output. Out of all the Logic gates this one is my favorite because of it's simplicity. It takes in one bit and the output is the inverse bit. For example, if you passed in a 1(true) the output would be 0(false). On paper:
 ![not-gate](/images/notgate.jpg){:class="img-responsive"}
