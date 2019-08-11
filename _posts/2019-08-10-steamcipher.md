@@ -5,7 +5,6 @@ tags: [Encryption, Binary, Cyber Security, Python]
 header:
   image: "images/binarybannerone.jpg"
 excerpt: "Learn all about Binary Numbers while making a secure Stream Cipher that utilizes a XOR gate to create an encrypted code exchange"
-excerpt: "prerequisites: A good knowledge of basic Python"
 ---
 # Encryption Project: XOR Stream Cipher
   In this project I will be guiding you (the reader) through the process of making a secure binary encryption.
