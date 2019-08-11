@@ -45,3 +45,10 @@ Or gates just like And gates take in two bits as an input and produce 1 bit as a
 ### Not Gates
 Unlike the others the Not gate only takes in **one** input and produces just **one** output. Out of all the Logic gates this one is my favorite because of it's simplicity. It takes in one bit and the output is the inverse bit. For example, if you passed in a 1(true) the output would be 0(false). On paper:
 ![not-gate](/images/notgate.jpg){:class="img-responsive"}
+## Using Logic Gates in Python
+Now we will see how these logic operators work in a Python IDE
+1. Create two variables with different binary numbers using binary notiation (0b)
+```python
+    A = 0b1110
+    B = 0b0101
+```
