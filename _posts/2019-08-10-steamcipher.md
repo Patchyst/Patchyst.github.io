@@ -52,3 +52,22 @@ Now we will see how these logic operators work in a Python IDE
     A = 0b1110
     B = 0b0101
 ```
+2. Use bit-wise operators that take in the two binary numbers(except for the not gate use one variable) as inputs (& = And gate, | = Or gate, ~ = Not gate)
+```python
+    A = 0b1110
+    B = 0b0101
+    X = A & B
+    Y = A | B
+    Z = ~A
+```
+3. Use the built in bin() function to print the outputs
+```python
+    A = 0b1110
+    B = 0b0101
+    X = A & B
+    Y = A | B
+    Z = ~A
+    print(bin(X))
+    print(bin(Y))
+    print(bin(Z))
+```
