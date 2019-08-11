@@ -35,10 +35,13 @@ The following are common boolean operators:
 * OR, check if at least one of the statements are True
 * NOT, changes the boolean values of a statement, true to false or false to true
 The term "logic gate" originates from how electronic circuits handle booleans, on(true) off(false).
-### And gates
-And gates take in two bits as an input and produce a single bit as an output. If both input bits are 1s then the output bit is a 1.
-Just like the And operator if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an and logic gate is often written in a D.
+### And Gates
+And gates take in two bits as an input and produce a single bit as an output. If both input bits are a 1(true) then the output bit is a 1(true).
+Just like the And operator used in regular Python if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an and logic gate is often written in a D.
 ![and-gate](/images/andgate.jpg){:class="img-responsive"}
 ### Or Gates
-Or gates just like and gates take in two bits as an input and produce 1 bit as an output. However, there is one key difference, I like to think of an Or gate as the opposite of an and gate. In an or gate if any inputs are a 1(true) then the output will be 1(true), but if both input are 0(false) then the output with be 0(false). On paper:
+Or gates just like And gates take in two bits as an input and produce 1 bit as an output. However, there is one key difference, I like to think of an Or gate as the opposite of an and gate. In an Or gate if any inputs are a 1(true) then the output will be 1(true), but if both input are 0(false) then the output with be 0(false). On paper:
 ![or-gate](/images/orgate.jpg){:class="img-responsive"}
+### Not Gates
+Unlike the others the Not gate only takes in **one** input and produces just **one** output. Out of all the Logic gates this one is my favorite because of it's simplicity. It takes in one bit and the output is the inverse bit. For example, if you passed in a 1(true) the output would be 0(false)
+![not-gate](/images/notgate.jpg){:class="img-responsive"}
