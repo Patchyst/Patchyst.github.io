@@ -14,5 +14,4 @@ excerpt: "A secure Stream Cipher that utilizes a XOR gate to create an encrypted
 
 
 ## What are Binary Numbers?
-    So what is a Binary Number? Well, as I'm sure you've seen before, a 1 or 0, but what does that really
-    mean?
+So what is a Binary Number? Well, as I'm sure you've seen before, a 1 or 0, but what does that really *mean?*
