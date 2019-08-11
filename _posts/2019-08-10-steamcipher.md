@@ -11,6 +11,7 @@ excerpt: "A secure Stream Cipher that utilizes a XOR gate to create an encrypted
   To some binary numbers may seem shrouded in mystery and secrecy, a classified code that only natural born
   geniuses can understand. However, binary numbers can be boiled to two simple values that even someone with
   zero knowledge of computer hardware and software can understand.
+  *if you already have a good idea of what Binary numbers are you can skip the next three sections*
 
 
 ## What are Binary Numbers?
@@ -18,3 +19,10 @@ So what is a Binary Number? Well, as I'm sure you've seen before, or guessed by 
 A computer, at the most basic level contains a series of on and off switches. 1 representing *on* and 0 representing *off*. You could go a step further and assign
 binary numbers to a Boolean value True(1) or False(0). Now lets convert a Binary number to our number system. Unlike the base 10 system Binary uses the base 2 system
 ![binary-conversion](/images/binaryconversion.jpg){:class="img-responsive"}
+Now that you understand that Binary isn't dark magic, lets look into the grouping of Binary.
+
+
+## Bits and Bytes
+To keep it short, a bit is a single binary digit, 8 bits makeup a byte. A word on your computer screen is usually 32 bits or 4 bytes of data. Bytes can store data and execute basic instructions. You've probably heard byte before when shopping for electronics, kilobyte, megabyte, gigabyte, terabyte, etc etc..
+A kilobyte is 1024 bytes, a megabyte is 1024 kilobytes and a gigabyte 1024 megabytes, you get the point. Now that we've built a solid foundation in Binary lets make the
+encryption! 
