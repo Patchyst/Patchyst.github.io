@@ -1,12 +1,12 @@
 ---
-title: "(XOR) Stream Cipher"
+title: "Binary numbers, logic gates, binary Encryption"
 date: 2019-08-10
-tags: [Encryption, Binary, Cyber Security, Python]
+tags: [Encryption, Binary, Python]
 header:
   image: "images/binarybannerone.jpg"
-excerpt: "Learn all about Binary Numbers while making a secure Stream Cipher that utilizes a XOR gate to create an encrypted code exchange"
+excerpt: "Learn all about Binary Numbers, this will serve as prerequisite to making the XOR Stream Cipher "
 ---
-# Encryption Project: XOR Stream Cipher
+# Encryption Project: XOR Stream Cipher (Binary Intro)
   In this project I will be guiding you (the reader) through the process of making a secure binary encryption.
   To some binary numbers may seem shrouded in mystery and secrecy, a classified code that only natural born
   geniuses can understand. However, binary numbers can be boiled to two simple values that even someone with
