@@ -92,7 +92,7 @@ Just like the other gates XOR also has a bit wise operator which can be used as 
 ```
 
 ## Bit Shifting
-Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or right using a convenient little operator:
+Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or right using a convenient built in operator:
 ```python
     A = 0b1110
     B = 0b0101
@@ -101,8 +101,7 @@ Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or righ
     #right-shift operator
     right_shift = A >> 1
 ```
-As you've probably guessed you can change the numbers to the right of the operator to change how many places the bit shifts. Right bit shifting
-removes the right-most bit. You can alter the number of bits removed by adjusting the numbers to the right of the operator. Left shift adds a 0 to the 2⁰ place.
+As you've probably guessed you can change the numbers to the right of the operator to change how many places the bit shifts. Right bit shifting removes the right-most bit. You can alter the number of bits removed by adjusting the numbers to the right of the operator. Left shift adds a 0 to the 2⁰ place.
 If you printed the left_shift and right_shift variables the output would look like this:
 ```python
   # A shifted one to the left
