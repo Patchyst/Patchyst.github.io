@@ -6,3 +6,4 @@ header:
   image: "images/cyber.jpg"
 excerpt: "Create a Python Program that utilizes Binary Numbers and a XOR gate to create a secure code exchange"
 ---
+# XOR Stream Cipher
