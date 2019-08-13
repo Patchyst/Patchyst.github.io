@@ -20,7 +20,7 @@ key = "0001110101010101"
 code_ints = [int(i) for i in str(code)]
 key_ints = [int(i) for i in str(key)]
 ```
-Pretty soon we are going to use a for loop to iterate through our strings and append the results to a list of integers, so create an empty list variable along with the code and key variable.
+Pretty soon we are going to use a for loop to iterate through our code list and append the results to another list of integers which will be our encoded binary, so create an empty list variable along with the code and key variable.
 ```python
 code = "1001111010100001"
 key = "0001110101010101"
