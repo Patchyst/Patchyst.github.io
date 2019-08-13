@@ -61,7 +61,7 @@ for i in range(len(code_ints)):
   cipher_bit = code_ints[i] ^ key_ints[i]
   cipher = "".join(str(x) for x in cipher_ints)
 ```
-If you would like to watch the encryption process as your code runs copy the cipher variable code text and throw it inside a print statement.
+(Optional) If you would like to watch the encryption process as your code runs copy the cipher variable code text and throw it inside a print statement.
 ```python
 code = "1001111010100001"
 key = "0001110101010101"
