@@ -38,3 +38,14 @@ cipher_integers = []
 
 for i in range(len(code_ints)):
 ```
+Create a variable called cipher_bit that uses the XOR operator on each of the corresponding index values for code_ints and key_ints.
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+cipher_integers = []
+
+for i in range(len(code_ints)):
+  cipher_bit = code_ints[i] ^ key_ints[i]
+```
