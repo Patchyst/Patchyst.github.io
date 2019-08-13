@@ -109,3 +109,4 @@ If you printed the left_shift and right_shift variables the output would look li
   # A shifted  one to the right
   0b111
 ```
+Using bit operations can make beef up an encryptions defenses because bit operations can change characters in ways that are nearly impossible for humans to decipher.
