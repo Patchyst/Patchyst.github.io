@@ -29,7 +29,7 @@ encryption!
 
 
 ## Logic Gates
-OK ok, I know I said we would begin on encryption, but understanding logic gates is kind of crucial if you want to write the encryption. Remember earlier when I assigned binary numbers to a Boolean value? Well, that will come in handy now. Just like an if statement in Python logic gates use Boolean Values.
+OK ok, I know I said we would begin on encryption, but understanding logic gates is kind of crucial if you want to write the encryption. Remember earlier when I assigned binary numbers to a Boolean value? Well, that will come in handy now. Just like an if statement in Python, logic gates use Boolean Values.
 The following are common Boolean operators:
 * AND, checks if both statements are True
 * OR, check if at least one of the statements are True
