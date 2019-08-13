@@ -35,5 +35,6 @@ key = "0001110101010101"
 code_ints = [int(i) for i in str(code)]
 key_ints = [int(i) for i in str(key)]
 cipher_integers = []
+
 for i in range(len(code_ints)):
 ```
