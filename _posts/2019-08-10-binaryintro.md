@@ -37,10 +37,10 @@ The following are common boolean operators:
 The term "logic gate" originates from how electronic circuits handle booleans, on(true) off(false).
 ### And Gates
 And gates take in two bits as an input and produce a single bit as an output. If both input bits are a 1(true) then the output bit is a 1(true).
-Just like the And operator used in regular Python if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an and logic gate is often written in a D.
+Just like the And operator used in regular Python if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an And logic gate is often written in a D.
 ![and-gate](/images/andgate.jpg){:class="img-responsive"}
 ### Or Gates
-Or gates just like And gates take in two bits as an input and produce 1 bit as an output. However, there is one key difference, I like to think of an Or gate as the opposite of an and gate. In an Or gate if any inputs are a 1(true) then the output will be 1(true), but if both input are 0(false) then the output with be 0(false). On paper:
+Or gates just like And gates take in two bits as an input and produce 1 bit as an output. I like to think of an Or gate as the opposite of an And gate. In an Or gate if any inputs are a 1(true) then the output will be 1(true), but if both input are 0(false) then the output with be 0(false). On paper:
 ![or-gate](/images/orgate.jpg){:class="img-responsive"}
 ### Not Gates
 Unlike the others the Not gate only takes in **one** input and produces just **one** output. Out of all the Logic gates this one is my favorite because of it's simplicity. It takes in one bit and the output is the inverse bit. For example, if you passed in a 1(true) the output would be 0(false). On paper:
@@ -71,3 +71,13 @@ Now we will see how these logic operators work in a Python IDE
     print(bin(Y))
     print(bin(Z))
 ```
+If you used the same variables as me you should get the outputs
+```python
+  0b100
+  0b1111
+  -0b1111
+```
+### Z's output?
+You may have noticed you got a negative Binary number, or -15. Since Math can get a little wacky in binary, we use a few different ways to deal with negative numbers. I won't be going into great detail on all these methods for the sake of brevity so i'll llink to a good video that explains it better than I could. The most important methods to remember are sign bits, the one's complement, and the two's complement. The equation above simulates the two's complement in Python where negative values represent a value subtracted by 2 raised to the the number of bits. Luckily we won't be dealing with the Not logic gate for this project.
+[Twos complement](https://www.youtube.com/watch?v=4qH4unVtJkE)
+
