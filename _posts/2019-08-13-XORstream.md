@@ -124,4 +124,4 @@ print(cipher_binary)
 Yes, I recognize that this code could be even shorter than it already is, but its important to get into the habit of changing the variable types so you aren't just limited to logic gates and binary encryptions. Now you can go into the code, edit a few variables and add another layer of encryption if you want to.
 
 ## So what?
-Well, if you haven't already noticed changing anything in the slightest in binary will result in some drastic changes, with all the possible outcomes when using logic gates it's arguably impossible to decrypt unless you were to share your encryption key with someone making your encryption only breakable with human error.
+Well, if you haven't already noticed changing anything in the slightest in binary will result in some drastic changes, with all the possible outcomes when using logic gates it's arguably impossible to decrypt unless you were to share your encryption key with someone making your encryption only breakable by human error.
