@@ -78,6 +78,6 @@ If you used the same variables as me you should get the outputs
   -0b1111
 ```
 ### Z's output?
-You may have noticed you got a negative Binary number, or -15. Since Math can get a little wacky in binary, we use a few different ways to deal with negative numbers. I won't be going into great detail on all these methods for the sake of brevity so i'll llink to a good video that explains it better than I could. The most important methods to remember are sign bits, the one's complement, and the two's complement. The equation above simulates the two's complement in Python where negative values represent a value subtracted by 2 raised to the the number of bits. Luckily we won't be dealing with the Not logic gate for this project.
-[Twos complement](https://www.youtube.com/watch?v=4qH4unVtJkE)
+You may have noticed you got a negative Binary number, or -15. Since Math can get a little wacky in binary, we use a few different ways to deal with negative numbers. I won't be going into great detail on all these methods for the sake of brevity so i'll [link to a good video](https://www.youtube.com/watch?v=4qH4unVtJkE) that explains it better than I could. The most important methods to remember are sign bits, the one's complement, and the two's complement. The equation above simulates the two's complement in Python where negative values represent a value subtracted by 2 raised to the the number of bits. Luckily we won't be dealing with the Not logic gate for this project.
+
 
