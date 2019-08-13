@@ -59,3 +59,30 @@ assuming you used the same variable values as me you should get the output
 ```python
 w¡Db2
 ```
+You could also find a the hexadecimal values of these characters by using the ord() function to turn them into [ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html) values and then turn this ASCII values into hexadecimal.
+```python
+hex_num = [0X77, 0XA1, 0X44, 0X62, 0X32]
+translated_hex = ""
+for x in hex_num:
+  translated_hex += chr(x)
+print(translated_hex)
+#convert back to hexadecimal values
+for i in translated_hex:
+  a = ord(i)
+  converted_hex = hex(a)
+  print(converted_hex)
+```
+assuming your code and variables are the same as mine the second for loop should output:
+```python
+119
+0x77
+161
+0xa1
+68
+0x44
+98
+0x62
+50
+0x32
+```
+As you can see the for loop outputs the ASCII value of the translated_hex then turns that number back to it's corresponding hexadecimal.
