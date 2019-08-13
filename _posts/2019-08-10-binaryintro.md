@@ -100,4 +100,4 @@ Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or righ
     #right-shift operator
     right_shift = B >> 1
 ```
-As you've probably guess you can change the numbers to the right of the operator to change how many places the bit shifts
+As you've probably guessed you can change the numbers to the right of the operator to change how many places the bit shifts
