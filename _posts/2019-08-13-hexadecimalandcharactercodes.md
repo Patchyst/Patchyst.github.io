@@ -32,3 +32,5 @@ If you used the same variables as me you should get the output:
 0x22
 0b111110
 ```
+## Why Use Hexadecimal?
+Well, the answer is quite simple. 8 bits of binary can be represented using two hexadecimal numbers. This means hexadecimal can be used to track bytes of binary data.
