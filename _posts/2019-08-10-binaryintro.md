@@ -52,7 +52,7 @@ Now we will see how these logic gates work in a Python IDE
     A = 0b1110
     B = 0b0101
 ```
-2. Use bit-wise operators that take in the two binary numbers(except for the not gate use one variable) as inputs (& = And gate, | = Or gate, ~ = Not gate)
+2. Use bit-wise operators that take in the two binary numbers(except for the Not gate use one variable) as inputs (& = And gate, | = Or gate, ~ = Not gate)
 ```python
     A = 0b1110
     B = 0b0101
@@ -78,7 +78,7 @@ If you used the same variables as me you should get the outputs
   -0b1111
 ```
 ### Z's output?
-You may have noticed you got a negative Binary number.Python treats the Not operator as using the equation:      -(x + 1). Since Math can get a little wacky in binary, we use a few different ways to deal with negative numbers. I won't be going into great detail on all these methods for the sake of brevity so I'll [link to a good video](https://www.youtube.com/watch?v=4qH4unVtJkE) that explains it better than I could. The most important methods to remember are sign bits, the one's complement, and the two's complement. The equation above simulates the two's complement where negative values represent a value subtracted by 2 raised to the number of bits. Luckily we won't be dealing with the Not logic gate for this project.
+You may have noticed you got a negative Binary number. Python treats the Not operator as using the equation:-(x + 1). Since Math can get a little wacky in binary, we use a few different ways to deal with negative numbers. I won't be going into great detail on all these methods for the sake of brevity so I'll [link to a good video](https://www.youtube.com/watch?v=4qH4unVtJkE) that explains it better than I could. The most important methods to remember are sign bits, the one's complement, and the two's complement. The equation above simulates the two's complement where negative values represent a value subtracted by 2 raised to the number of bits. Luckily we won't be dealing with the Not logic gate for this project.
 
 ## XOR Logic Gate
 The exclusive or gate or XOR gate, like many other gates, takes in two inputs. However, the XOR gate only produces a 1 bit when the inputs are contrary. For example a 1 and 0 input would give an output of 1 while an input of 1, 1 or 0, 0 would produce an output of 0. The XOR gate is useful for encrypting data because it's technically made up of three other gates. The diagram below:
