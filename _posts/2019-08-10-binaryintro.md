@@ -29,12 +29,12 @@ encryption!
 
 
 ## Logic Gates
-OK ok, I know I said we would begin on the XOR stream cipher, but understanding logic gates is kind of crucial if you want to write the encryption. Remember earlier when I assigned binary numbers to a boolean value? Well, that will come in handy now. Just like an if statement in Python logic gates use Boolean Values.
-The following are common boolean operators:
+OK ok, I know I said we would begin on the XOR stream cipher, but understanding logic gates is kind of crucial if you want to write the encryption. Remember earlier when I assigned binary numbers to a Boolean value? Well, that will come in handy now. Just like an if statement in Python logic gates use Boolean Values.
+The following are common Boolean operators:
 * AND, checks if both statements are True
 * OR, check if at least one of the statements are True
-* NOT, changes the boolean values of a statement, true to false or false to true
-The term "logic gate" originates from how electronic circuits handle booleans, on(true) off(false).
+* NOT, changes the Boolean values of a statement, true to false or false to true
+The term "logic gate" originates from how electronic circuits handle Booleans, on(true) off(false).
 ### And Gates
 And gates take in two bits as an input and produce a single bit as an output. If both input bits are a 1(true) then the output bit is a 1(true).
 Just like the And operator used in regular Python if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an And logic gate is often written in a D.
@@ -47,7 +47,7 @@ Unlike the others the Not gate only takes in **one** input and produces just **o
 ![not-gate](/images/notgate.jpg){:class="img-responsive"}
 ## Using Logic Gates in Python
 Now we will see how these logic operators work in a Python IDE
-1. Create two variables with different binary numbers using binary notiation (0b)
+1. Create two variables with different binary numbers using binary notation (0b)
 ```python
     A = 0b1110
     B = 0b0101
@@ -78,6 +78,8 @@ If you used the same variables as me you should get the outputs
   -0b1111
 ```
 ### Z's output?
-You may have noticed you got a negative Binary number, or -15. Since Math can get a little wacky in binary, we use a few different ways to deal with negative numbers. I won't be going into great detail on all these methods for the sake of brevity so i'll [link to a good video](https://www.youtube.com/watch?v=4qH4unVtJkE) that explains it better than I could. The most important methods to remember are sign bits, the one's complement, and the two's complement. The equation above simulates the two's complement in Python where negative values represent a value subtracted by 2 raised to the the number of bits. Luckily we won't be dealing with the Not logic gate for this project.
+You may have noticed you got a negative Binary number. Since Math can get a little wacky in binary, we use a few different ways to deal with negative numbers. I won't be going into great detail on all these methods for the sake of brevity so I'll [link to a good video](https://www.youtube.com/watch?v=4qH4unVtJkE) that explains it better than I could. The most important methods to remember are sign bits, the one's complement, and the two's complement. The equation above simulates the two's complement where negative values represent a value subtracted by 2 raised to the number of bits. Luckily we won't be dealing with the Not logic gate for this project.
 
-
+## XOR Logic Gate
+The exclusive or gate or XOR gate, like many other gates, takes in two inputs. However, the XOR gate only produces a 1 bit when the inputs are contrary. For example a 1 and 0 input would give an output of 1 while an input of 1, 1 or 0, 0 would produce an output of 0. The XOR gate is useful for encrypting data because it's technically made up of three other gates. The diagram below:
+![XOR-gate](/images/xorgate.jpg){:class="img-responsive"}
