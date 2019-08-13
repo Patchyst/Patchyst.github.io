@@ -49,3 +49,28 @@ cipher_integers = []
 for i in range(len(code_ints)):
   cipher_bit = code_ints[i] ^ key_ints[i]
 ```
+Finally we will convert our encoded message into a string.
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+cipher_integers = []
+
+for i in range(len(code_ints)):
+  cipher_bit = code_ints[i] ^ key_ints[i]
+  cipher = "".join(str(x) for x in cipher_ints)
+```
+If you would like to watch the encryption process as your code runs copy the cipher variable code text and throw it inside a print statement.
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+cipher_integers = []
+
+for i in range(len(code_ints)):
+  cipher_bit = code_ints[i] ^ key_ints[i]
+  cipher = "".join(str(x) for x in cipher_ints)
+  print("".join(str(x) for x in cipher_ints))
+```
