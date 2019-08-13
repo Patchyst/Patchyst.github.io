@@ -36,4 +36,21 @@ If you used the same variables as me you should get the output:
 Well, the answer is quite simple. 8 bits of binary can be represented using two hexadecimal numbers. This means hexadecimal can be used to track massive codes of binary data. For example, 0x8240a79c is much easier to read when compared to 0b10000010010000001010011110011100.
 
 # Character codes
-You will most likely encounter hexadecimal in character codes. Character codes are part of [Unicode](https://patchyst.github.io/binaryintro/) which is an international encoding standard for all text characters agreed upon by everyone in the computer industry. Character codes are found in everything ranging from phonetic scripts to emojis. Hexadecimal is behind every character on your computer screen.
+You will most likely encounter hexadecimal in character codes. Character codes are part of [Unicode](https://patchyst.github.io/binaryintro/) which is an international encoding standard for all text characters agreed upon by everyone in the computer industry. Character codes are found in everything ranging from phonetic scripts to emojis. Hexadecimal is behind every character on your computer screen. In case your still confused Python has a few built in functions to help display this. In a python IDE create a list of two character hexadecimal numbers, with an empty string variable.
+```python
+hex_num = [0X77, 0XA1, 0X44, 0X62, 0X32]
+translated_hex = ""
+```
+create a for loop that iterates through the hex_num variable and translates them into text
+```python
+hex_num = [0X77, 0XA1, 0X44, 0X62, 0X32]
+translated_hex = ""
+for x in hex_num:
+```
+Use the built in chr() method to translate the hexadecimal
+```python
+hex_num = [0X77, 0XA1, 0X44, 0X62, 0X32]
+translated_hex = ""
+for x in hex_num:
+  translated_hex += chr(i)
+```
