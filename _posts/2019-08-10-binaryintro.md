@@ -90,3 +90,14 @@ Just like the other gates XOR also has a bit wise operator which can be used as 
     F = A ^ B
     print(bin(F))
 ```
+## Bit Shifting
+Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or right
+```python
+    A = 0b1110
+    B = 0b0101
+    #left-shift operator
+    left_shift = A << 1
+    #right-shift operator
+    right_shift = B >> 1
+```
+As you've probably guess you can change the numbers to the right of the operator to change how many places the bit shifts
