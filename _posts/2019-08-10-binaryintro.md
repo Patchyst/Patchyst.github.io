@@ -98,6 +98,14 @@ Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or righ
     #left-shift operator
     left_shift = A << 1
     #right-shift operator
-    right_shift = B >> 1
+    right_shift = A >> 1
 ```
-As you've probably guessed you can change the numbers to the right of the operator to change how many places the bit shifts
+As you've probably guessed you can change the numbers to the right of the operator to change how many places the bit shifts. Right bit shifting
+removes the right-most bit. You can alter the number of bits removed by adjusting the numbers to the right of the operator. Left shift adds a 0 to the 2⁰ place.
+If you printed the left_shift and right_shift variables the output would look like this:
+```python
+  # A shifted to the left
+  0b11100
+  # A shifted to the right
+  0b111
+```
