@@ -13,9 +13,27 @@ To begin, we will create two strings one for the key, and one for the binary mes
 code = "1001111010100001"
 key = "0001110101010101"
 ```
+Now we convert our strings to a list of integers using a for loop.
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+```
 Pretty soon we are going to use a for loop to iterate through our strings and append the results to a list of integers, so create an empty list variable along with the code and key variable.
 ```python
 code = "1001111010100001"
 key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+cipher_ints = []
+```
+Now we will create a for loop that iterates through the list for the length of our code.
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
 cipher_integers = []
+for i in range(len(code_ints)):
 ```
