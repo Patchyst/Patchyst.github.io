@@ -113,3 +113,5 @@ If you printed the left_shift and right_shift variables the output would look li
 Using bit operations can make beef up an encryption's defenses because they can shift and change characters in ways that are nearly impossible for humans to decipher.
 ## Recap:
 I know I spent all this time chattering about how we were going to use binary numbers for encryption, but it can be used in many other circumstances. Remember earlier when I said binary is a representation of if electricity is flowing(1) or not(0)? Well, logic gates display how circuits handle these electrical pulses. It's likely you will run into a few of the logic gates when looking through circuit schematics. With this in mind, binary is like a neat little string that ties the hardware and software of a computer together, learning the fundamentals of Binary will allow you to have a better understanding of any electricity based apparatus.
+## What's next?
+Finally, now that that's all over with we can begin on out XOR Stream Cipher. I hope my crash course on basic Binary was helpful. Remember that nothing in computer science is
