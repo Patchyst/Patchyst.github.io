@@ -55,3 +55,7 @@ for x in hex_num:
   translated_hex += chr(x)
 print(translated_hex)
 ```
+assuming you used the same variable values as me you should get the output
+```python
+w¡Db2
+```
