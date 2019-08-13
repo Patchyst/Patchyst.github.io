@@ -52,6 +52,6 @@ Use the built in chr() method to translate the hexadecimal and print it
 hex_num = [0X77, 0XA1, 0X44, 0X62, 0X32]
 translated_hex = ""
 for x in hex_num:
-  translated_hex += chr(i)
+  translated_hex += chr(x)
 print(translated_hex)
 ```
