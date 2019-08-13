@@ -83,3 +83,10 @@ You may have noticed you got a negative Binary number. Since Math can get a litt
 ## XOR Logic Gate
 The exclusive or gate or XOR gate, like many other gates, takes in two inputs. However, the XOR gate only produces a 1 bit when the inputs are contrary. For example a 1 and 0 input would give an output of 1 while an input of 1, 1 or 0, 0 would produce an output of 0. The XOR gate is useful for encrypting data because it's technically made up of three other gates. The diagram below:
 ![XOR-gate](/images/xorgate.jpg){:class="img-responsive"}
+#### XOR bit wise operator
+Just like the other gates XOR also has a bit wise operator which can be used as such:
+```python
+    #using the variables from the previous program
+    F = A ^ B
+    print(bin(F))
+```
