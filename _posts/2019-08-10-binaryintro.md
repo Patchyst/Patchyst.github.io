@@ -104,8 +104,8 @@ As you've probably guessed you can change the numbers to the right of the operat
 removes the right-most bit. You can alter the number of bits removed by adjusting the numbers to the right of the operator. Left shift adds a 0 to the 2⁰ place.
 If you printed the left_shift and right_shift variables the output would look like this:
 ```python
-  # A shifted to the left
+  # A shifted one to the left
   0b11100
-  # A shifted to the right
+  # A shifted  one to the right
   0b111
 ```
