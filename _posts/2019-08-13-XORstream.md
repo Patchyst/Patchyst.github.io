@@ -74,3 +74,49 @@ for i in range(len(code_ints)):
   cipher = "".join(str(x) for x in cipher_ints)
   print("".join(str(x) for x in cipher_ints))
 ```
+To see the full result simply add a print(cipher) outside the for loop
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+cipher_integers = []
+
+for i in range(len(code_ints)):
+  cipher_bit = code_ints[i] ^ key_ints[i]
+  cipher = "".join(str(x) for x in cipher_ints)
+  print("".join(str(x) for x in cipher_ints))
+print(cipher)
+```
+(Optional) Ok, well we have a fully encrypted binary number, but it's still technically a string so if you want to do more operations, or add more layers of encryption you would just turn the cipher variable into an integer with a base of 2.
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+cipher_integers = []
+
+for i in range(len(code_ints)):
+  cipher_bit = code_ints[i] ^ key_ints[i]
+  cipher = "".join(str(x) for x in cipher_ints)
+  print("".join(str(x) for x in cipher_ints))
+print(cipher)
+cipher_binary = (int(cipher, base=2))
+```
+print out the cipher_binary variable and you will get your encrypted binary number in decimal form!
+
+```python
+code = "1001111010100001"
+key = "0001110101010101"
+code_ints = [int(i) for i in str(code)]
+key_ints = [int(i) for i in str(key)]
+cipher_integers = []
+
+for i in range(len(code_ints)):
+  cipher_bit = code_ints[i] ^ key_ints[i]
+  cipher = "".join(str(x) for x in cipher_ints)
+  print("".join(str(x) for x in cipher_ints))
+print(cipher)
+cipher_binary = (int(cipher, base=2))
+print(cipher_binary)
+```
