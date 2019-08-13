@@ -35,5 +35,5 @@ If you used the same variables as me you should get the output:
 ## Why Use Hexadecimal?
 Well, the answer is quite simple. 8 bits of binary can be represented using two hexadecimal numbers. This means hexadecimal can be used to track massive codes of binary data. For example, 0x8240a79c is much easier to read when compared to 0b10000010010000001010011110011100.
 
-#Character codes
-You will most likely encounter hexadecimal in character codes. Character codes are part of [Unicode](https://patchyst.github.io/binaryintro/) which is an international encoding standard for all text characters agreed upon by everyone in the computer industry. Character codes are found in everything ranging from phonetic scripts to emojis 
+# Character codes
+You will most likely encounter hexadecimal in character codes. Character codes are part of [Unicode](https://patchyst.github.io/binaryintro/) which is an international encoding standard for all text characters agreed upon by everyone in the computer industry. Character codes are found in everything ranging from phonetic scripts to emojis
