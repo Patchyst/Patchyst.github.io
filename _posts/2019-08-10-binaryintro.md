@@ -1,7 +1,7 @@
 ---
 title: "Binary numbers, logic gates, binary Encryption"
 date: 2019-08-10
-tags: [Encryption, Binary and Hexadecimal, Python]
+tags: [Binary and Hexadecimal]
 header:
   image: "images/binarybannerone.jpg"
 excerpt: "Learn all about Binary Numbers, this will serve as prerequisite to making the XOR Stream Cipher "
