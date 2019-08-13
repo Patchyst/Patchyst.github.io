@@ -90,6 +90,7 @@ Just like the other gates XOR also has a bit wise operator which can be used as 
     F = A ^ B
     print(bin(F))
 ```
+
 ## Bit Shifting
 Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or right using a convenient little operator:
 ```python
@@ -109,4 +110,6 @@ If you printed the left_shift and right_shift variables the output would look li
   # A shifted  one to the right
   0b111
 ```
-Using bit operations can make beef up an encryptions defenses because bit operations can change characters in ways that are nearly impossible for humans to decipher.
+Using bit operations can make beef up an encryption's defenses because they can shift and change characters in ways that are nearly impossible for humans to decipher.
+## Recap:
+I know I spent all this time chattering about how we were going to use binary numbers for encryption, but it can be used in many other circumstances. Remember earlier when I said binary is a representation of if electricity is flowing(1) or not(0)? Well, logic gates display how circuits handle these electrical pulses. It's likely you will run into a few of the logic gates when looking through circuit schematics. With this in mind, binary is like a neat little string that ties the hardware and software of a computer together, learning the fundamentals of Binary will allow you to have a better understanding of any electricity based apparatus.
