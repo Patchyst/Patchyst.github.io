@@ -32,7 +32,7 @@ encryption!
 OK ok, I know I said we would begin on encryption, but understanding logic gates is kind of crucial if you want to write the encryption. Remember earlier when I assigned binary numbers to a Boolean value? Well, that will come in handy now. Just like an if statement in Python, logic gates use Boolean Values.
 The following are common Boolean operators:
 * AND, checks if both statements are True
-* OR, check if at least one of the statements are True
+* OR, checks if at least one of the statements are True
 * NOT, changes the Boolean values of a statement, true to false or false to true
 The term "logic gate" originates from how electronic circuits handle Booleans, on(true) off(false).
 ### And Gates
@@ -40,7 +40,7 @@ And gates take in two bits as an input and produce a single bit as an output. If
 Just like the And operator used in regular Python if both conditions are True the output is True, if one of the conditions in false the output is False. On paper an And logic gate is often written in a D.
 ![and-gate](/images/andgate.jpg){:class="img-responsive"}
 ### Or Gates
-Or gates just like And gates take in two bits as an input and produce 1 bit as an output. I like to think of an Or gate as the opposite of an And gate. In an Or gate if any inputs are a 1(true) then the output will be 1(true), but if both input are 0(false) then the output with be 0(false). On paper:
+Or gates, just like And gates take in two bits as an input and produce 1 bit as an output. I like to think of an Or gate as the opposite of an And gate. In an Or gate if any inputs are a 1(true) then the output will be 1(true), but if both inputs are 0(false) then the output with be 0(false). On paper:
 ![or-gate](/images/orgate.jpg){:class="img-responsive"}
 ### Not Gates
 Unlike the others the Not gate only takes in **one** input and produces just **one** output. Out of all the Logic gates this one is my favorite because of it's simplicity. It takes in one bit and the output is the inverse bit. For example, if you passed in a 1(true) the output would be 0(false). On paper:
