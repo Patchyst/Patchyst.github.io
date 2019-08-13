@@ -91,7 +91,7 @@ Just like the other gates XOR also has a bit wise operator which can be used as 
     print(bin(F))
 ```
 ## Bit Shifting
-Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or right
+Just like a Shift Cipher or Caeser Cipher you can shift bits to the left or right using a convenient little operator:
 ```python
     A = 0b1110
     B = 0b0101
