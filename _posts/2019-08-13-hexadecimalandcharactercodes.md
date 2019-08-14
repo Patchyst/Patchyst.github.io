@@ -86,3 +86,9 @@ assuming your code and variables are the same as mine the second for loop should
 0x32
 ```
 As you can see the for loop outputs the ASCII value of the translated_hex then turns that number back to it's corresponding hexadecimal.
+
+## Recap:
+Hexadecimal is behind nearly every text, character, and even line on your screen, while it has many uses I won't be going into much detail on them other than how to make a Block Cipher using hexadecimal.
+
+# Now What?
+I know, I know, the hexadecimal section was pretty short compared to the binary section. However, now we can move on to make a hexadecimal encryption! To begin on the Block Cipher click here, or navigate to it via the projects page.
