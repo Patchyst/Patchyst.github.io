@@ -30,4 +30,4 @@ Inside the for loop the index value of the character going through the loop has 
 
 
 # Now What?
-I suggest if you're still interested in encryption check out the [XOR Stream Cipher](https://patchyst.github.io/XORstream/) or the [Hexadecimal Block Cipher](https://patchyst.github.io/BlockCipher/) posts I made!
+If you're still interested in encryption I suggest you check out the [XOR Stream Cipher](https://patchyst.github.io/XORstream/) or the [Hexadecimal Block Cipher](https://patchyst.github.io/BlockCipher/) posts I made!
