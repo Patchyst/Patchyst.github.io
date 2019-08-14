@@ -15,17 +15,17 @@ As I said before, a regular old shift cipher regulates you to just 26 mapping po
 
 ## making the ASCII Shift cipher
 To begin, we have to make two variables one for the key and one for the message. For this project I will be using input variables so I can change my message and key whenever I feel like doing so.
-{% highlight python %}
+```Python
 message = input("Enter the message you want to be encoded: ")
 x = int(input("Enter a shift key: "))
-{% endhighlight %}
+```
 Now we will create a for loop that iterates through the message variable and encrypts each letter one by one and outputs them.
-{% highlight python %}
+```Python
 message = input("Enter the message you want to be encoded: ")
 x = int(input("Enter a shift key: "))
 for i in message:
   print(chr(ord(i)+x), end = "")
-{% endhighlight %}
+```
 Inside the for loop the index value of the character going through the loop has the shift key added to it then the chr() function finds the corresponding character to shifted number. Lastly, the end = "" just makes it so each of the letter prints on the same line.
  Now lets test it out! I'll enter "Hello World!" as my message with a shift key of 15 and I get the output:
  **Wt{{~/f~{s0**
