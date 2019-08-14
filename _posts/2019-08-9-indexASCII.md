@@ -45,3 +45,6 @@ print(my_list[:4])
 What makes index values useful in encryption is you can use them to rearrange values(e.g. [block cipher](https://patchyst.github.io/BlockCipher/) ) Index values aren't just for Python either, they're universally used throughout all languages and are an essential part of software development.
 
 ## ASCII Values
+ASCII or American Standard Code for Information Interchange, is an encoding standard for any text or character in electronics. ASCII codes are used in everything from telecommunications to websites. Since computers can't exactly understand letters all the ASCII values are numbers and represent a character. Chart of ASCII values:
+
+![ASCII-Values](/images/ASSCI.jpg){:class="img-responsive"}
