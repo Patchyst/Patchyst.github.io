@@ -15,3 +15,7 @@ As I said before, a regular old shift cipher regulates you to just 26 mapping po
 
 ## making the ASCII Shift cipher
 To begin, we have to make two variables one for the key and one for the message. For this project I will be using input variables so I can change my message and key whenever I feel like doing so.
+```python
+message = input("Enter the message you want to be encoded: ")
+x = int(input("Enter a shift key: "))
+```
