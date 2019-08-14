@@ -26,3 +26,4 @@ x = int(input("Enter a shift key: "))
 for i in message:
   print(chr(ord(i)+x), end = "")
 ```
+Inside the for loop the index value of the character going through the loop has the shift key added to it then the chr() function finds the corresponding character to shifted number. Lastly, the end = "" just makes it so each of the letter prints on the same line.
