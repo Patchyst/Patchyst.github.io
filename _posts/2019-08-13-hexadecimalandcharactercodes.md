@@ -4,7 +4,7 @@ date: 2019-08-10
 tags: [Binary and Hexadecimal]
 header:
   image: "images/hex_two.jpg"
-excerpt: ""
+excerpt: "Learn the fundamentals of hexadecimal while preparing to make a hexadecimal encryption(Block Cipher)"
 ---
 If you've ever used [binary numbers](https://patchyst.github.io/binaryintro/) you may recognize the base 2 system, right after binary there is hexadecimal which uses the base 16 system. The hexadecimal alphabet only consists of 16 characters, 1 - 9 after 9, numbers become letters ranging from A to F. Converting hexadecimal to decimal form would look like this:
 
