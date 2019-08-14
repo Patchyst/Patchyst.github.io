@@ -12,3 +12,6 @@ As you've probably guessed it has something to do with Julius Caesar. While the 
 
 ## Advantages of using ASCII values
 As I said before, a regular old shift cipher regulates you to just 26 mapping possibilities, using ASCII opens up a world of mapping possibilities that weren't there before. If you aren't already familiar with ASCII values I suggest you [Click Here](https://patchyst.github.io/indexASCII/) to fully understand. In fact, if you research how to make a Caesar Cipher in Python you'll probably get at least 5-15 lines of code while I can show you how to make an even more secure encryption in just four lines of code!
+
+## making the ASCII Shift cipher
+To begin, we have to make two variables one for the key and one for the message. For this project I will be using input variables so I can change my message and key whenever I feel like doing so.
