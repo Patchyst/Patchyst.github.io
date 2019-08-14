@@ -48,3 +48,18 @@ What makes index values useful in encryption is you can use them to rearrange va
 ASCII or American Standard Code for Information Interchange, is an encoding standard for any text or character in electronics. ASCII codes are used in everything from telecommunications to websites. Since computers can't exactly understand letters all the ASCII values are numbers and represent a character. Chart of ASCII values:
 
 ![ASCII-Values](/images/ASCII.jpg){:class="img-responsive"}
+
+To get the ASCII values of numbers and characters Python has some neat built in functions. In a Python IDE try out the chr() and ord() functions:
+```python
+print(ord("a"))
+print(chr(97))
+```
+You should get the output:
+```python
+97
+a
+```
+the ord() function found the ASCII value for "a" while the chr() function found the letter that 97 was representing. You can use these ASCII values to take numbers from an encryptions and turn them into letters.
+
+#What now?
+Well, you can make your very own Caesar Cipher using ASCII values you can check out the instructions on how to make it here.
