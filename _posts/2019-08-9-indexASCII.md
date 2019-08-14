@@ -42,6 +42,6 @@ print(my_list[0:3])
 #will print everything behind index value 4 but not index value 4
 print(my_list[:4])
 ```
-Index values are essential to making many encryptions and are universally used through every language
+What makes index values useful in encryption is you can use them to rearrange values(e.g. [Block Cipher]https://patchyst.github.io/BlockCipher/)) Index values aren't just for Python either, they're universally used throughout all languages and are an essential part of software development.
 
 ## ASCII Values
