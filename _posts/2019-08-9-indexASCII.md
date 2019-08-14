@@ -1,0 +1,47 @@
+---
+title: "ASCII and Index Values"
+date: 2019-08-9
+tags: [Python]
+header:
+  image: "images/python_index.jpg"
+excerpt: "An intro to ASCII values and Index values for beginner Python Programmers"
+---
+As I was making all the posts with instructions on how to build encryptions I realized that a part of many encryptions involves ASCII values and index values. Even if your new to Python or any programming language for that matter, you may recognize ASCII and index values. With this in mind I decided to make a little refresher page on the basics of ASCII and index values.
+
+## Index values
+Whether it be a list, a string, or tuple, every value or character has an index value for its position. For example if you had a list of strings:
+```python
+my_list = ["F", "A", "Y", "E", "R"]
+```
+Each character in that list would have a unique index value corresponding with it's position. You can call an index value by using the variable name with the index value in brackets
+```python
+my_list = ["F", "A", "Y", "E", "R"]
+print(my_list[0])
+```
+The output would be "F" because index values start from 0 then go to 1, 2 ,3.
+```python
+my_list = ["F", "A", "Y", "E", "R"]
+print(my_list[0])
+print(my_list[3])
+print(my_list[1])
+```
+The output would be in this order: "F", "E", "A". You can also reference values in a data type using negative index values. -1 would return the last value -2 second to last value and so on.
+```python
+my_list = ["F", "A", "Y", "E", "R"]
+print(my_list[-1])
+print(my_list[-2])
+```
+If you run this program you should see the values "R" and "E" in that order
+You can also use a : to print out a group of index values as such:
+```python
+my_list = ["F", "A", "Y", "E", "R"]
+#will print everything out from index value 0 and on
+print(my_list[0:])
+#prints everything out index value 0-2 but not index value 3
+print(my_list[0:3])
+#will print everything behind index value 4 but not index value 4
+print(my_list[:4])
+```
+Index values are essential to making many encryptions and are universally used through every language
+
+## ASCII Values
