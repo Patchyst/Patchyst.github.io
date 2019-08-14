@@ -59,7 +59,7 @@ assuming you used the same variable values as me you should get the output
 ```python
 w¡Db2
 ```
-You could also find a the hexadecimal values of these characters by using the ord() function to turn them into [ASCII](https://www.cs.cmu.edu/~pattis/15-1XX/common/handouts/ascii.html) values and then turn this ASCII values into hexadecimal.
+You could also find a the hexadecimal values of these characters by using the ord() function to turn them into [ASCII](https://patchyst.github.io/indexASCII/) values and then turn the ASCII values into hexadecimal.
 ```python
 hex_num = [0X77, 0XA1, 0X44, 0X62, 0X32]
 translated_hex = ""
