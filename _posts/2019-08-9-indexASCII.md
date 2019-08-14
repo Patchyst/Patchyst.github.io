@@ -47,4 +47,4 @@ What makes index values useful in encryption is you can use them to rearrange va
 ## ASCII Values
 ASCII or American Standard Code for Information Interchange, is an encoding standard for any text or character in electronics. ASCII codes are used in everything from telecommunications to websites. Since computers can't exactly understand letters all the ASCII values are numbers and represent a character. Chart of ASCII values:
 
-![ASCII-Values](/images/ASSCI.jpg){:class="img-responsive"}
+![ASCII-Values](/images/ASCII.jpg){:class="img-responsive"}
