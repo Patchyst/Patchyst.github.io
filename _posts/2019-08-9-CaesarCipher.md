@@ -19,3 +19,10 @@ To begin, we have to make two variables one for the key and one for the message.
 message = input("Enter the message you want to be encoded: ")
 x = int(input("Enter a shift key: "))
 ```
+Now we will create a for loop that iterates through the message variable and encrypts each letter one by one and outputs them.
+```python
+message = input("Enter the message you want to be encoded: ")
+x = int(input("Enter a shift key: "))
+for i in message:
+  print(chr(ord(i)+x), end = "")
+```
