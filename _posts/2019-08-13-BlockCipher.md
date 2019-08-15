@@ -226,3 +226,5 @@ If you used the same key and unencrypted text as me you should get the output:
 ```python
 ØÊØÞÞ@®BäØÈ
 ```
+# Code Not working?
+A few things may be the issue, if you forget to enter the smallest detail or put something inside of a loop when it doesn't the whole code will break. (I learned this the hard way). If you copy and pasted directly from this webpage the difference in indentation may lead to indentation inconsistencies so be sure to check for that. Lastly, I'm going to be linking the working gist page with the full working code ---> [here](https://gist.github.com/Patchyst/88b544098522ff6c742d6811e3c9bcce) <--- So check that out if you want to debug your own.
