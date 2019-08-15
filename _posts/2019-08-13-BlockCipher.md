@@ -98,7 +98,7 @@ def chunk_message(message, block_data = 4):
 ```
 What we've done here is preprocesses the message by breaking it into chunks of numbers making it easier for the encryption function.
 
-## Converting the chunked message back into a message
+## Converting the chunked message back into a string
 Since our message is currently an integer, it would be helpful to have a function that converts it back into a string. Below the previous function create a new function with arguments for the message_chunked and block size:
 ```python
 def string_message(message_chunked, block_data = 4):
