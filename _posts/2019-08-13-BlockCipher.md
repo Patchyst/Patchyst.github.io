@@ -172,12 +172,27 @@ Example =
 # shifted to the left by five with the carry
 010111010
 ```
-With that in mind create a variable that will accomplish that
+With that in mind create a variable that will accomplish that and shift it to the left
 ```python
 def apply_shift(message_chunked, key, block_data = 4):
   encrypted_message = []
   max_bit = block_data * 8
   for n in range(len(message_chunked)):
     block = message_chunked[n]
-
+    carry = block % 2**key
+     carry = carry << (max_bit - key)
+```
+Ok, so the math might look confusing at first, but if you take a second to break it down it really isn't. You're taking the block and dividing it by 2 to the power of the key. So going back to the example from earlier, if you plug in the key and block size you get this equation: (8 % 2**5). Well that isn't to bad at all and if you do the math the answer is 3 which if you remember was the number of bits shifted to the beginning of the shifted byte.
+Now set the encrypted character value by shifting it to the right and append it to the encrypted_message list. Finally return the encrypted_message.
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+  for n in range(len(message_chunked)):
+    block = message_chunked[n]
+    carry = block % 2**key
+    carry = carry << (max_bit - key)
+    encrypted_character = (block >> key) + carry
+    encrypted_message.append(encrypted_character)
+  return encrypted_message    
 ```
