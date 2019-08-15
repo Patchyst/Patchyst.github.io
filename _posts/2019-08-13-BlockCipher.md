@@ -15,48 +15,84 @@ To begin, define a function that takes in the message and block size as argument
 ```python
 def chunk_message(message, block_data = 4):
 ```
-Now create an empty list for the "chunked" message and a variable for the block
+Now create an empty list for the "chunked" message:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
-  block = 0
 ```
 figure out the number of blocks in the message:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
-  block = 0
   block_count = len(message) // block_data + 1
 ```
 You may be wondering why there is a + 1 at the end. This is to ensure the last block is the correct size, this means that the last block will be spaced with a few extra bits.
-Next create a for loop that iterates through our message:
+Next create a for loop that iterates through our message with a variable for the block:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
-  block = 0
   block_count = len(message) // block_data + 1
   for character in range(block_count * block_data):
+    block = 0
 ```
 If you read the post I made on [binary numbers](https://patchyst.github.io/binaryintro/) you may be familiar with bit shifting in Python. In the for loop shift the block variable 1 byte or 8 bits to the right:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
-  block = 0
   block_count = len(message) // block_data + 1
   for character in range(block_count * block_data):
+    block = 0
     block = block << 8
 ```
 If the character is still less than the message's length use the ord() function on the character to transform it into it's integer value and add it to the block:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
-  block = 0
   block_count = len(message) // block_data + 1
   for character in range(block_count * block_data):
-    block = block << 8'
+    block = 0
+    block = block << 8
 
     if character < len(message):
      block += ord(message[character])
  else:
      block += 0
+```
+Using the bit_length() function check if the block running through the loop meets the required number of bits/bytes, if it does append it to the list and reset the block variable for the next set of characters:
+```python
+def chunk_message(message, block_data = 4):
+  message_chunked = []
+  block_count = len(message) // block_data + 1
+  for character in range(block_count * block_data):
+    block = 0
+    block = block << 8
+
+    if character < len(message):
+     block += ord(message[character])
+    else:
+     block += 0
+
+    if block.bit_length() > (block_data -1) * 8:
+      message_chunked.append(block)
+      block += 0
+```
+Finally return the message_chunked:
+
+```python
+def chunk_message(message, block_data = 4):
+  message_chunked = []
+  block_count = len(message) // block_data + 1
+  for character in range(block_count * block_data):
+    block = 0
+    block = block << 8
+
+    if character < len(message):
+     block += ord(message[character])
+    else:
+     block += 0
+
+    if block.bit_length() > (block_data -1) * 8:
+      message_chunked.append(block)
+      block += 0
+  return message_chunked
 ```
