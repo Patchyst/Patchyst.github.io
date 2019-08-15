@@ -145,7 +145,7 @@ def apply_shift(message_chunked, key, block_data = 4):
   for n in range(len(message_chunked)):
     block = message_chunked[n]
     carry = block % (2**key)
-    carry = carry << (max_bit - key)
+    carry = carry << (max_bit - key)  
     encrypted_character = (block >> key) + carry
     encrypted_message.append(encrypted_character)
   return encrypted_message    
@@ -186,7 +186,7 @@ def string_message(message_chunked, block_data = 4):
   for i in range(len(message_chunked)):
     block = message_chunked[i]
     for x in range(block_data):
-      byte = block >> (8 * (block_data - 1 - x)) % 2**8
+      byte = (block >> (8 * (block_data - 1 - x))) % 2**8
 ```
 Use the chr() function to convert the integer into it's corresponding character and append it to the message string, and as usual return the message outside of all loops
 ```python
@@ -195,8 +195,8 @@ def string_message(message_chunked, block_data = 4):
   for i in range(len(message_chunked)):
     block = message_chunked[i]
     for x in range(block_data):
-      byte = block >> (8 * (block_data - 1 - x)) % 2**8
-      message.append(chr(byte))
+      byte = (block >> (8 * (block_data - 1 - x))) % 2**8
+      message += chr(byte)
   return message
 ```
 
