@@ -15,42 +15,44 @@ To begin, define a function that takes in the message and block size as argument
 ```python
 def chunk_message(message, block_data = 4):
 ```
-Now create an empty list for the "chunked" message:
+Now create an empty list for the "chunked" message, and a block variable:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
+  block = 0
 ```
 figure out the number of blocks in the message:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
+  block = 0
   block_count = len(message) // block_data + 1
 ```
 You may be wondering why there is a + 1 at the end. This is to ensure the last block is the correct size, this means that the last block will be spaced with a few extra bits.
-Next create a for loop that iterates through our message with a variable for the block:
+Next create a for loop that iterates through our message:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
+  block = 0
   block_count = len(message) // block_data + 1
   for character in range(block_count * block_data):
-    block = 0
 ```
 If you read the post I made on [binary numbers](https://patchyst.github.io/binaryintro/) you may be familiar with bit shifting in Python. In the for loop shift the block variable 1 byte or 8 bits to the left:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
+  block = 0
   block_count = len(message) // block_data + 1
   for character in range(block_count * block_data):
-    block = 0
     block = block << 8
 ```
 If the character is still less than the message's length use the ord() function on the character to transform it into it's integer value and add it to the block:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
+  block = 0
   block_count = len(message) // block_data + 1
   for character in range(block_count * block_data):
-    block = 0
     block = block << 8
 
     if character < len(message):
@@ -62,9 +64,9 @@ Using the bit_length() function check if the block running through the loop meet
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
+  block = 0
   block_count = len(message) // block_data + 1
   for character in range(block_count * block_data):
-    block = 0
     block = block << 8
 
     if character < len(message):
@@ -74,7 +76,7 @@ def chunk_message(message, block_data = 4):
 
     if block.bit_length() > (block_data -1) * 8:
       message_chunked.append(block)
-      block += 0
+      block = 0
 ```
 Finally return the message_chunked:
 
@@ -93,13 +95,64 @@ def chunk_message(message, block_data = 4):
 
     if block.bit_length() > (block_data -1) * 8:
       message_chunked.append(block)
-      block += 0
+      block = 0
   return message_chunked
 ```
 What we've done here is preprocesses the message by breaking it into chunks of numbers making it easier for the encryption function.
 
-## Converting the chunked message back into a string
-Since our message is currently an integer, it would be helpful to have a function that converts it back into a string. Below the previous function create a new function with arguments for the message_chunked and block size:
+## Shifting the Blocks
+Block Ciphers shift bits in a way that effect the entire block of data. All the bits may makeup different characters, but they can all be shifted as if they were one binary number adding more ways to concatenate the data. Create a new function below the others to apply the shifts with the arguments for the chunked message, shift key and block size:
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+```
+create an empty list for the encrypted message and set a maximum block size
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+```
+As usual create a for loop that iterates through the chunked messages and set the block variable
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+  for n in range(len(message_chunked)):
+    block = message_chunked[n]
+```
+We will now begin shifting the bits, but we first must make a variable that carries over the bits so that they are not lost when they're being shifted. For example, if you have one byte of data and you shift it five places to the left then in the new byte of data the three bits that were effectively "moved" out of the byte are now the first three bits at the beginning of the shifted byte.
+Example =
+```python
+010010111
+# shifted to the left by five with the carry
+010111010
+```
+With that in mind create a variable that will accomplish that and shift it to the left
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+  for n in range(len(message_chunked)):
+    block = message_chunked[n]
+    carry = block % (2**key)
+     carry = carry << (max_bit - key)
+```
+Ok, so the math might look confusing at first, but if you take a second to break it down it really isn't. You're taking the block and dividing it by 2 to the power of the key. So going back to the example from earlier, if you plug in the key and block size you get this equation: (8 % 2**5). Well that isn't to bad at all and if you do the math the answer is 3 which if you remember was the number of bits shifted to the beginning of the shifted byte.
+Now set the encrypted character value by shifting it to the right and append it to the encrypted_message list. Finally return the encrypted_message.
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+  for n in range(len(message_chunked)):
+    block = message_chunked[n]
+    carry = block % (2**key)
+    carry = carry << (max_bit - key)
+    encrypted_character = (block >> key) + carry
+    encrypted_message.append(encrypted_character)
+  return encrypted_message    
+```
+
+## Converting the encrypted message back into a string
+Since our encrypted message is currently an integer, it would be helpful to have a function that converts it back into a string. Below the previous function create a new function with arguments for the message_chunked and block size:
 ```python
 def string_message(message_chunked, block_data = 4):
 
@@ -146,53 +199,26 @@ def string_message(message_chunked, block_data = 4):
       message.append(chr(byte))
   return message
 ```
-## Shifting the Blocks
-Block Ciphers shift bits in a way that effect the entire block of data. All the bits may makeup different characters, but they can all be shifted as if they were one binary number adding more ways to concatenate the data. Create a new function below the others to apply the shifts with the arguments for the chunked message, shift key and block size:
+
+## Running the Program
+To begin, create a plaintext variable and a key variable
 ```python
-def apply_shift(message_chunked, key, block_data = 4):
+unencrypted_text = "Hello World"
+key = 7
 ```
-create an empty list for the encrypted message and set a maximum block size
+Now turn it into blocks and apply the shift
 ```python
-def apply_shift(message_chunked, key, block_data = 4):
-  encrypted_message = []
-  max_bit = block_data * 8
+unencrypted_text = "Hello World"
+key = 7
+block_list = chunk_message(unencrypted_text)
+encrypted_list = apply_shift(block_list)
 ```
-As usual create a for loop that iterates through the chunked messages and set the block variable
+Lastly turn the encrypted_list into a string to see the encrypted string
 ```python
-def apply_shift(message_chunked, key, block_data = 4):
-  encrypted_message = []
-  max_bit = block_data * 8
-  for n in range(len(message_chunked)):
-    block = message_chunked[n]
-```
-We will now begin shifting the bits, but we first must make a variable that carries over the bits so that they are not lost when they're being shifted. For example, if you have one byte of data and you shift it five places to the left then in the new byte of data the three bits that were effectively "moved" out of the byte are now the first three bits at the beginning of the shifted byte.
-Example =
-```python
-010010111
-# shifted to the left by five with the carry
-010111010
-```
-With that in mind create a variable that will accomplish that and shift it to the left
-```python
-def apply_shift(message_chunked, key, block_data = 4):
-  encrypted_message = []
-  max_bit = block_data * 8
-  for n in range(len(message_chunked)):
-    block = message_chunked[n]
-    carry = block % 2**key
-     carry = carry << (max_bit - key)
-```
-Ok, so the math might look confusing at first, but if you take a second to break it down it really isn't. You're taking the block and dividing it by 2 to the power of the key. So going back to the example from earlier, if you plug in the key and block size you get this equation: (8 % 2**5). Well that isn't to bad at all and if you do the math the answer is 3 which if you remember was the number of bits shifted to the beginning of the shifted byte.
-Now set the encrypted character value by shifting it to the right and append it to the encrypted_message list. Finally return the encrypted_message.
-```python
-def apply_shift(message_chunked, key, block_data = 4):
-  encrypted_message = []
-  max_bit = block_data * 8
-  for n in range(len(message_chunked)):
-    block = message_chunked[n]
-    carry = block % 2**key
-    carry = carry << (max_bit - key)
-    encrypted_character = (block >> key) + carry
-    encrypted_message.append(encrypted_character)
-  return encrypted_message    
+unencrypted_text = "Hello World"
+key = 7
+block_list = chunk_message(unencrypted_text)
+encrypted_list = apply_shift(block_list, key)
+encrypted_string = string_message(encrypted_list)
+print(encrypted_string)
 ```
