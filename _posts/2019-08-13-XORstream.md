@@ -144,3 +144,6 @@ Yes, I recognize that this code could be even shorter than it already is, but it
 
 ## So what?
 Well, if you haven't already noticed changing anything in the slightest in binary will result in some drastic changes, with all the possible outcomes when using logic gates it's arguably impossible to decrypt unless you were to share your encryption key with someone meaning your encryption is only breakable by human error.
+
+### Issues with code?
+See the fully working code [here](https://gist.github.com./Patchyst/2fe365f86945f26a8ac7dc3283c6c953)
