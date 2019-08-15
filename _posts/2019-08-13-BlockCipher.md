@@ -135,7 +135,7 @@ def string_message(message_chunked, block_data = 4):
     for x in range(block_data):
       byte = block >> (8 * (block_data - 1 - x)) % 2**8
 ```
-Use the chr() function to convert the integer into it's corresponding character and append it to the message string, and as usual return the message outside of all loops:
+Use the chr() function to convert the integer into it's corresponding character and append it to the message string, and as usual return the message outside of all loops
 ```python
 def string_message(message_chunked, block_data = 4):
   message = ""
@@ -147,8 +147,37 @@ def string_message(message_chunked, block_data = 4):
   return message
 ```
 ## Shifting the Blocks
-Block Ciphers shift bits in a way that effect the entire block of data. All the bits may makeup different characters, but they can all be shifted as if they were one binary number adding more ways to concatenate the data. Create a new function below the others to apply the shifts:
+Block Ciphers shift bits in a way that effect the entire block of data. All the bits may makeup different characters, but they can all be shifted as if they were one binary number adding more ways to concatenate the data. Create a new function below the others to apply the shifts with the arguments for the chunked message, shift key and block size:
 ```python
-def apply_shift(message_chunked, key, block_data = 4)
+def apply_shift(message_chunked, key, block_data = 4):
+```
+create an empty list for the encrypted message and set a maximum block size
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+```
+As usual create a for loop that iterates through the chunked messages and set the block variable
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+  for n in range(len(message_chunked)):
+    block = message_chunked[n]
+```
+We will now begin shifting the bits, but we first must make a variable that carries over the bits so that they are not lost when they're being shifted. For example, if you have one byte of data and you shift it five places to the left then in the new byte of data the three bits that were effectively "moved" out of the byte are now the first three bits at the beginning of the shifted byte.
+Example =
+```python
+010010111
+# shifted to the left by five with the carry
+010111010
+```
+With that in mind create a variable that will accomplish that
+```python
+def apply_shift(message_chunked, key, block_data = 4):
+  encrypted_message = []
+  max_bit = block_data * 8
+  for n in range(len(message_chunked)):
+    block = message_chunked[n]
 
 ```
