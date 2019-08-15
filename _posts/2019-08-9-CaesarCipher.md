@@ -31,3 +31,6 @@ Inside the for loop the index value of the character going through the loop has 
 
 # Now What?
 If you're still interested in encryption I suggest you check out the [XOR Stream Cipher](https://patchyst.github.io/XORstream/) or the [Hexadecimal Block Cipher](https://patchyst.github.io/BlockCipher/) posts I made!
+
+### Issues with code?
+See the fully working gist code [here](https://gist.github.com/Patchyst/06006ea382d27e26b0be4abaf7246948)
