@@ -9,4 +9,4 @@ excerpt: ""
 Before starting on this project you should have a solid understanding of index values and hexadecimal. If not you can check out these two posts I wrote on both topics: [Index Values](https://patchyst.github.io/indexASCII/), [Hexadecimal Numbers](https://patchyst.github.io/hexadecimalandcharactercodes/)
 # The Block Cipher
 As the name suggest the block breaks messages into blocks of data each made up of a couple bytes of data in hexadecimal form. Unlike a [Stream Cipher](https://patchyst.github.io/indexASCII/) a block cipher encrypts blocks of data rather than individual bits of data.
-## S
+## Separating the message into blocks
