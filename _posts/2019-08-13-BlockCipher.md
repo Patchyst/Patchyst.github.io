@@ -10,3 +10,4 @@ Before starting on this project you should have a solid understanding of index v
 # The Block Cipher
 As the name suggest the block breaks messages into blocks of data each made up of a couple bytes of data in hexadecimal form. Unlike a [Stream Cipher](https://patchyst.github.io/indexASCII/) a block cipher encrypts blocks of data rather than individual bits of data.
 ## Separating the message into blocks
+Each block in this project will be separated into 3 - 4 bytes of data or 24 - 32 bits of data.
