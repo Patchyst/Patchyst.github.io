@@ -96,4 +96,53 @@ def chunk_message(message, block_data = 4):
       block += 0
   return message_chunked
 ```
-What we've done here is preprocesses the message by breaking it into chunks of numbers making it easier for the encryption function:
+What we've done here is preprocesses the message by breaking it into chunks of numbers making it easier for the encryption function.
+
+## Converting the chunked message back into a message
+Since our message is currently an integer, it would be helpful to have a function that converts it back into a string. Below the previous function create a new function with arguments for the message_chunked and block size:
+```python
+def string_message(message_chunked, block_data = 4):
+
+```
+Add an empty string variable for the message and a for loop to iterate through the chunked message:
+```python
+def string_message(message_chunked, block_data = 4):
+  message = ""
+  for c in range(len(message_chunked)):
+```
+Create a block variable set to the current integer going through the for loop:
+```python
+def string_message(message_chunked, block_data = 4):
+  message = ""
+  for i in range(len(message_chunked)):
+    block = message_chunked[i]
+```
+Create a nested for loop that iterates through the block using the block size:
+```python
+def string_message(message_chunked, block_data = 4):
+  message = ""
+  for i in range(len(message_chunked)):
+    block = message_chunked[i]
+    for x in range(block_data):
+
+```
+Extract the specific byte or number from the block using the following equation:
+```python
+def string_message(message_chunked, block_data = 4):
+  message = ""
+  for i in range(len(message_chunked)):
+    block = message_chunked[i]
+    for x in range(block_data):
+      byte = block >> (8 * (block_data - 1 - x)) % 2**8
+```
+Use the chr() function to convert the integer into it's corresponding character and append it to the message string, and as usual return the message outside of all loops:
+```python
+def string_message(message_chunked, block_data = 4):
+  message = ""
+  for i in range(len(message_chunked)):
+    block = message_chunked[i]
+    for x in range(block_data):
+      byte = block >> (8 * (block_data - 1 - x)) % 2**8
+      message.append(chr(byte))
+  return message
+```
