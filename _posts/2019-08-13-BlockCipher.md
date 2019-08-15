@@ -126,7 +126,7 @@ def string_message(message_chunked, block_data = 4):
     for x in range(block_data):
 
 ```
-Since each block is 4 bytes(32 bits) of data, extracting the correct byte takes a bit of math, the first character has to be taken from the first 8 bits so the block is shifted right in steps of 8. Lastly we use the modulo to remove any unwanted bits. Now enter the following equation into the nested for loop:
+Since each block is 4 bytes(32 bits) of data, extracting the correct byte takes a bit of math, the first character has to be taken from the first 8 bits so the block is shifted right in steps of 8. Lastly, we use the modulo to remove any unwanted bits. Now enter the following equation into the nested for loop:
 ```python
 def string_message(message_chunked, block_data = 4):
   message = ""
