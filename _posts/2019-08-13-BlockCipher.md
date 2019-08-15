@@ -35,7 +35,7 @@ def chunk_message(message, block_data = 4):
   for character in range(block_count * block_data):
     block = 0
 ```
-If you read the post I made on [binary numbers](https://patchyst.github.io/binaryintro/) you may be familiar with bit shifting in Python. In the for loop shift the block variable 1 byte or 8 bits to the right:
+If you read the post I made on [binary numbers](https://patchyst.github.io/binaryintro/) you may be familiar with bit shifting in Python. In the for loop shift the block variable 1 byte or 8 bits to the left:
 ```python
 def chunk_message(message, block_data = 4):
   message_chunked = []
