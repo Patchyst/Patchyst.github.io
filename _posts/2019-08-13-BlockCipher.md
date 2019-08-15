@@ -146,3 +146,9 @@ def string_message(message_chunked, block_data = 4):
       message.append(chr(byte))
   return message
 ```
+## Shifting the Blocks
+Block Ciphers shift bits in a way that effect the entire block of data. All the bits may makeup different characters, but they can all be shifted as if they were one binary number adding more ways to concatenate the data. Create a new function below the others to apply the shifts:
+```python
+def apply_shift(message_chunked, key, block_data = 4)
+
+```
