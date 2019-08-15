@@ -215,10 +215,14 @@ encrypted_list = apply_shift(block_list)
 ```
 Lastly turn the encrypted_list into a string to see the encrypted string
 ```python
-unencrypted_text = "Hello World"
+unencrypted_text = "Hello World!"
 key = 7
 block_list = chunk_message(unencrypted_text)
 encrypted_list = apply_shift(block_list, key)
 encrypted_string = string_message(encrypted_list)
 print(encrypted_string)
+```
+If you used the same key and unencrypted text as me you should get the output:
+```python
+ØÊØÞÞ@®BäØÈ
 ```
