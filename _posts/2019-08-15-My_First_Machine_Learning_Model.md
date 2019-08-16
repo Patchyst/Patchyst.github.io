@@ -17,9 +17,12 @@ In terms of Machine Learning a neuron can be broken to a simple algebraic equati
 ## Activation Functions:
 An Activation or Transfer function is an essential part of every neuron, it takes the output from the previous neuron and sees if the value meets the boundaries of the preferred value. For example, if the output doesn't meet a required threshold then the neuron is not activated and the neuron becomes 0. Activation functions withhold useless outputs and assist in weight adjustment.
 
-### Sigmoid
+### *Common Activation Functions*
 
-![Perceptron](/images/sigmoid.jpg){:class="img-responsive"}
+![Activation Function](/images/activationfunction.jpg){:class="img-responsive"}
+
+## Forward Propagation
+Forward Propogation, also known as the training step is the process of using the y=mx+b form before the activation function, then compare the output with the desired output and get the error.
 
 ## The Hidden layer
 The Hidden Layer is the layer between the input and output nodes that takes in a set of weighted inputs and produces a weighted sum that is passed to the output nodes.
@@ -28,3 +31,5 @@ The Hidden Layer is the layer between the input and output nodes that takes in a
 * Training Data: The data that the model uses to learn, improve, and "train" from
 * validation Data: An unbiased data set used to fine tune the model's hyperparameters
 * Test Data: Used after all the training and validation data has been used. As the name suggests it is used to "test" the model's ability.
+
+# **Building the Neuron**
