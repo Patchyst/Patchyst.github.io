@@ -21,5 +21,5 @@ The Hidden Layer is the layer between the input and output nodes that takes in a
 
 ## Different Data Set types
 * Training Data: The data that the model uses to learn, improve, and "train" from
-* validation Data: An unbiased data set used to fine tune the models hyperparameters
+* validation Data: An unbiased data set used to fine tune the model's hyperparameters
 * Test Data: Used after all the training and validation data has been used. As the name suggests it is used to "test" the model's ability.
