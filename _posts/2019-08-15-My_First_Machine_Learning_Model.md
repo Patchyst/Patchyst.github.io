@@ -30,6 +30,6 @@ y being the output, x as the input, m as the weight, and b as the bias. Using th
 ## Activation Functions:
 Remember earlier when I mentioned earlier that a linear classifier uses linear combinations to determine which class an object belongs to? Linear activation functions use a linear combination to define the output of a node given a set of inputs.
 ### Sigmoid
-Sigmoid is the activation function that Perceptron uses the equation:
+Sigmoid is the activation function that Perceptron uses. Sigmoid equation:
 
 ![Perceptron](/images/sigmoid.jpg){:class="img-responsive"}
