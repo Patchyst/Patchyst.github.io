@@ -25,8 +25,11 @@ The Hidden Layer is the layer between the input and output nodes that takes in a
 * Test Data: Used after all the training and validation data has been used. As the name suggests it is used to "test" the model's ability.
 
 # Perceptron
-With all that in mind I can give you the quick and easy definition of Perceptron. Perceptron takes in input data and multiplies it by random weights, adds the bias value, and puts in through an activation function or in our case Sigmoid to get the result. If the result value is wrong it calculates the loss and tweaks using backpropagation and gradient descent work the model.
+With all that in mind I can give you the quick and easy definition of Perceptron (this is the same for neurons in any artificial neural network). Perceptron takes in input data and multiplies it by random weights, adds the bias value, and puts in through an activation function or in our case Sigmoid to get the result. If the result value is wrong it calculates the loss and tweaks using backpropagation and gradient descent work the model. This can actually be represented using slope-intercept form y = mx + b
+y being the output, x as the input, m as the weight, and b as the bias. Using this equation you can make a graph that uses linear regression as a model.
 ## Activation Functions:
 Remember earlier when I mentioned earlier that a linear classifier uses linear combinations to determine which class an object belongs to? Linear activation functions use a linear combination to define the output of a node given a set of inputs.
 ### Sigmoid
-Sigmoid is the activation function that Perceptron uses 
+Sigmoid is the activation function that Perceptron uses the equation:
+
+![Perceptron](/images/sigmoid.jpg){:class="img-responsive"}
