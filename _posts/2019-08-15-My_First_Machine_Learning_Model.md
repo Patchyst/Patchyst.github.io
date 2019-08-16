@@ -33,3 +33,9 @@ The Hidden Layer is the layer between the input and output nodes that takes in a
 * Test Data: Used after all the training and validation data has been used. As the name suggests it is used to "test" the model's ability.
 
 # **Building the Neuron**
+Since creating a Neuron can be confusing lets it down into steps:
+*1 Take in the training data as an input
+*2 Neuron processes the data and produces a loss
+*3 Adjust the weights based off the loss
+*4 Repeat steps 1-3 until the expected output is methods
+ 
