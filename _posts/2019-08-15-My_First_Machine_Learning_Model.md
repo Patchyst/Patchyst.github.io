@@ -71,3 +71,16 @@ class Neuron:
         # add initial_weights variable so you can easily change the weight attribute whenever you need to
         self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
 ```
+For this project we'll be using the TanH activation function, we don't have to define it because it's built into Numpy. However, you do have to create a function that calls the TanH function and returns the value.
+```python
+import numpy as np
+import numpy.random as rand
+import matplotlib.pyplot as plt
+
+
+class Neuron:
+    def __init__(self):
+        rand.seed(1)
+        # add initial_weights variable so you can easily change the weight attribute whenever you need to
+        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+```
