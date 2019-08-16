@@ -9,17 +9,17 @@ excerpt: "In this project I guide you through how I made my first Machine Learni
 # What is Machine Learning?
 Up until this point you've probably made programs to automate tasks for you such as, do math, create encryptions, and convert complicated binary and hexadecimal into "readable" characters. Computers have given us the ability to accomplish tasks that we could have never done on our own. However, as you've noticed a computer must be explicitly told exactly what to do, but what if one could program a computer to automatically learn and improve at a task without being precisely told to do so? Well, as you've probably guessed by now I'm hinting at Machine Learning. Machine Learning uses massive data sets to allow a program to automatically enhance it's capabilities.
 
-# Neurons and Neural Networks
-## *parts of a Neuron*
-![Perceptron](/images/better_image.jpg){:class="img-responsive"}
-
-
 # What is Perceptron?
 In 1957 Frank Rosenblatt constructed what is known today as Perceptron at Cornell Aeronautical Laboratory. Perceptron is a linear classifier or more specifically a binary linear classifier that uses statistical classification. In Machine learning statistical classification is the process of using an object's features to determine which class it belongs to. A linear classifier achieves this by making a decision based on the values from a linear combination of the characteristics. As I said before Perceptron is a binary linear classifier meaning that it only classifies data into two parts; hence the bi prefix. If you're still confused lets view a Perceptron Neuron on paper and break it down:
 
 ![Perceptron](/images/nuer.jpg){:class="img-responsive"}
 
-The first thing you probably recognized were the inputs, just like any other input this is where the data is passed into the neuron, whether that data be from a training, validation, or test data set (I'll provide a brief explanation of the different data set types soon). Next we have the weights which are the lines that connect the nodes between layers. To begin, weights are randomly initialized or gauged through the process of [backpropagation](https://en.wikipedia.org/wiki/Backpropagation), the weights usually have a mean of 0 and a standard deviation of 1. To put it simply they're the strength of connection between the two nodes.
+
+# Neurons and Neural Networks
+## *parts of a Neuron*
+![Perceptron](/images/better_image.jpg){:class="img-responsive"}
+In terms of Machine Learning a neuron can be broken to a simple algebraic equation, slope-intercept form (y = mx + b). x as the input data, m as the weights, b as the bias, y as the output. **Inputs** are a set of values that represents data from a data set or another neuron, values passed in through an input serve to adjust and fine tune the weights of a neuron. **weights** control the shape of the linear regression graph, in a neural network all the "nodes" are connected via weights (e.g. output of )
+
 
 ## The Hidden layer
 The Hidden Layer is the layer between the input and output nodes that takes in a set of weighted inputs and produces a weighted sum that is passed to the output nodes.
