@@ -48,7 +48,7 @@ import numpy as np
 import numpy.random as rand
 import matplotlib.pyplot as plt
 ```
-Create a parent class for labeled Neuron:
+Create a parent class for the neuron:
 ```python
 import numpy as np
 import numpy.random as rand
@@ -57,4 +57,15 @@ import matplotlib.pyplot as plt
 
 class Neuron:
     def __init__(self):
+```
+Use the random function to randomly initialize the weights between using random seed. We use random.seed() because the weights will frequently change.
+```python
+import numpy as np
+import numpy.random as rand
+import matplotlib.pyplot as plt
+
+
+class Neuron:
+    def __init__(self):
+        rand.seed(1)
 ```
