@@ -24,9 +24,6 @@ An Activation or Transfer function is an essential part of every neuron, it take
 ## Forward Propagation
 Forward Propagation, also known as the training step is the process of using the y=mx+b form before the activation function, then comparing the output with the desired output and getting the error.
 
-## The Hidden layer
-The Hidden Layer is the layer between the input and output nodes that takes in a set of weighted inputs and produces a weighted sum that is passed to the output nodes.
-
 ## Different Data Set types
 * Training Data: The data that the model uses to learn, improve, and "train" from
 * validation Data: An unbiased data set used to fine tune the model's hyperparameters
