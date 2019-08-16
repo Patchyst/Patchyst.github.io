@@ -14,6 +14,12 @@ In 1957 Frank Rosenblatt constructed what is known today as Perceptron at Cornel
 
 ![Perceptron](/images/nuer.jpg){:class="img-responsive"}
 
-The first thing you probably recognized were the inputs, just like any other input this is where the data is passed into the neuron, whether that data be from a training, validation, or test data set (I'll provide a brief explanation of the different data set types soon). Next we have the weights which are the lines that connect the nodes between layers. To begin, weights are randomly initialized, the weights are usually random numbers that have a mean of 0 and a standard deviation of 1. Wieghts are usually the strength of connection between the two nodes.
+The first thing you probably recognized were the inputs, just like any other input this is where the data is passed into the neuron, whether that data be from a training, validation, or test data set (I'll provide a brief explanation of the different data set types soon). Next we have the weights which are the lines that connect the nodes between layers. To begin, weights are randomly initialized or gauged and through the process of backpropagation, the weights are usually random numbers that have a mean of 0 and a standard deviation of 1. Weights are usually the strength of connection between the two nodes.
 
 ## The Hidden layer
+The Hidden Layer is the layer between the input and output nodes that takes in a set of weighted inputs and produces a weighted sum that is passed to the output nodes.
+
+## Different Data Set types
+* Training Data: The data that the model uses to learn, improve, and "train" from
+* validation Data: An unbiased data set used to fine tune the models hyperparameters
+* Test Data: Used after all the training and validation data has been used. As the name suggests it is used to "test" the model's ability.
