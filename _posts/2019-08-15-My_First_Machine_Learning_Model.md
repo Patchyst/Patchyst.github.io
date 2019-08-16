@@ -44,3 +44,10 @@ Since creating a Neuron can be confusing lets it down into steps:
 Numpy is a useful module to use in any Machine Learning Project because it can make massive multidimensional arrays to serve as data sets.
 ### Matplotlib
 Matplotlib is being used because it allows us to easily graph large data sets and outputs.
+## Open a Python IDE...
+Open a Python IDE and import numpy, random from numpy, and Matplotlib.pyplot. Make sure you've pip installed these modules and are using an IDE that supports these modules.
+```python
+import numpy as np
+import numpy.random as rand
+import matplotlib.pyplot as plt
+```
