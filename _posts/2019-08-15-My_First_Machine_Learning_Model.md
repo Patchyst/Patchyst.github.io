@@ -9,6 +9,11 @@ excerpt: "In this project I guide you through how I made my first Machine Learni
 # What is Machine Learning?
 Up until this point you've probably made programs to automate tasks for you such as, do math, create encryptions, and convert complicated binary and hexadecimal into "readable" characters. Computers have given us the ability to accomplish tasks that we could have never done on our own. However, as you've noticed a computer must be explicitly told exactly what to do, but what if one could program a computer to automatically learn and improve at a task without being precisely told to do so? Well, as you've probably guessed by now I'm hinting at Machine Learning. Machine Learning uses massive data sets to allow a program to automatically enhance it's capabilities.
 
+# Neurons and Neural Networks
+## *parts of a Neuron*
+![Perceptron](/images/better_image.jpg){:class="img-responsive"}
+
+
 # What is Perceptron?
 In 1957 Frank Rosenblatt constructed what is known today as Perceptron at Cornell Aeronautical Laboratory. Perceptron is a linear classifier or more specifically a binary linear classifier that uses statistical classification. In Machine learning statistical classification is the process of using an object's features to determine which class it belongs to. A linear classifier achieves this by making a decision based on the values from a linear combination of the characteristics. As I said before Perceptron is a binary linear classifier meaning that it only classifies data into two parts; hence the bi prefix. If you're still confused lets view a Perceptron Neuron on paper and break it down:
 
@@ -24,9 +29,6 @@ The Hidden Layer is the layer between the input and output nodes that takes in a
 * validation Data: An unbiased data set used to fine tune the model's hyperparameters
 * Test Data: Used after all the training and validation data has been used. As the name suggests it is used to "test" the model's ability.
 
-# Perceptron
-With all that in mind I can give you the quick and easy definition of Perceptron (this is the same for neurons in any artificial neural network). Perceptron takes in input data and multiplies it by random weights, adds the bias value, and puts in through an activation function or in our case Sigmoid to get the result. If the result value is wrong it calculates the loss and tweaks using backpropagation and gradient descent work the model. This can actually be represented using slope-intercept form y = mx + b
-y being the output, x as the input, m as the weight, and b as the bias. Using this equation you can make a graph that uses linear regression as a model.
 ## Activation Functions:
 Remember earlier when I mentioned earlier that a linear classifier uses linear combinations to determine which class an object belongs to? Linear activation functions use a linear combination to define the output of a node given a set of inputs.
 ### Sigmoid
