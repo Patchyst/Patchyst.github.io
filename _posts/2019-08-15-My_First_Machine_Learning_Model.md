@@ -58,7 +58,7 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
 ```
-Use the random function to randomly initialize the weights between using random seed. We use random.seed() because the weights will frequently change.
+Next we use random.seed() to initialize a random weight:
 ```python
 import numpy as np
 import numpy.random as rand
