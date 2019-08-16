@@ -1,5 +1,5 @@
 ---
-title: "Build Your First Machine Learning Model with Tensor Flow"
+title: "Building Perceptron (Neural Network)"
 date: 2019-08-15
 tags: [Advanced Projects, Machine Learning, Artificial Intelligence, Python]
 header:
@@ -7,4 +7,4 @@ header:
 excerpt: "In this project I guide you through how I made my first Machine Learning Model"
 ---
 What is Machine Learning?
-Up until this point you've probably made programs to automate tasks for you such as, do math, create encryptions, and convert complicated binary and hexadecimal into "readable" characters. Computers have given us the ability to accomplish tasks that we could have never done on our own. However, as you've noticed a computer must be explicitly told exactly what to do, 
+Up until this point you've probably made programs to automate tasks for you such as, do math, create encryptions, and convert complicated binary and hexadecimal into "readable" characters. Computers have given us the ability to accomplish tasks that we could have never done on our own. However, as you've noticed a computer must be explicitly told exactly what to do, but what if one could program a computer to automatically learn and improve at a task without being precisely told to do so? Well, as you've probably guessed by now I'm hinting at Machine Learning. Machine Learning usually uses massive data sets to allow a program to automatically enhance it's capabilities.
