@@ -22,7 +22,7 @@ An Activation or Transfer function is an essential part of every neuron, it take
 ![Activation Function](/images/activationfunction.jpg){:class="img-responsive"}
 
 ## Forward Propagation
-Forward Propogation, also known as the training step is the process of using the y=mx+b form before the activation function, then compare the output with the desired output and get the error.
+Forward Propagation, also known as the training step is the process of using the y=mx+b form before the activation function, then comparing the output with the desired output and getting the error.
 
 ## The Hidden layer
 The Hidden Layer is the layer between the input and output nodes that takes in a set of weighted inputs and produces a weighted sum that is passed to the output nodes.
