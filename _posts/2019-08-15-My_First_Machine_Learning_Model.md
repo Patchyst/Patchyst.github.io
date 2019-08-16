@@ -23,3 +23,10 @@ The Hidden Layer is the layer between the input and output nodes that takes in a
 * Training Data: The data that the model uses to learn, improve, and "train" from
 * validation Data: An unbiased data set used to fine tune the model's hyperparameters
 * Test Data: Used after all the training and validation data has been used. As the name suggests it is used to "test" the model's ability.
+
+# Perceptron
+With all that in mind I can give you the quick and easy definition of Perceptron. Perceptron takes in input data and multiplies it by random weights, adds the bias value, and puts in through an activation function or in our case Sigmoid to get the result. If the result value is wrong it calculates the loss and tweaks using backpropagation and gradient descent work the model.
+## Activation Functions:
+Remember earlier when I mentioned earlier that a linear classifier uses linear combinations to determine which class an object belongs to? Linear activation functions use a linear combination to define the output of a node given a set of inputs.
+### Sigmoid
+Sigmoid is the activation function that Perceptron uses 
