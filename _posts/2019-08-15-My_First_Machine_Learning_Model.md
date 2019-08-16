@@ -12,7 +12,7 @@ Up until this point you've probably made programs to automate tasks for you such
 # Neurons and Neural Networks
 ## *parts of a Neuron*
 ![Perceptron](/images/better_image.jpg){:class="img-responsive"}
-In terms of Machine Learning a neuron can be broken to a simple algebraic equation, slope-intercept form (y = mx + b). x as the input data, m as the weights, b as the bias, y as the output. **Inputs** are a set of values that represents data from a data set or another neuron, values passed in through an input serve to adjust and fine tune the weights of a neuron. **weights** control the shape of the linear regression graph, in a neural network all the "nodes" are connected via weights (e.g. output of one neuron connected to another neuron's input). When a neural network is created the weights are randomly initialized with a value that has a standard deviation of 1. As the machine learning model continues to run, loss is calculated and the weights are fine tuned and adjusted to favor certain outputs. With that in mind a weight is the strength of connection between nodes. A negative weight decreases the favorability of an output while a large weight will be a favored output. Throughout the training process these weights will be fine tuned so that the proper conclusion is reached for every output. In short you reduce the weights of the incorrect or unfavorable outputs and increase the weights of favorable or correct outputs. **bias** helps adjust the output in correspondence with the given data, but having a high bias is the result misinterpreting the underlying goal of a dataset. Unfortunately, linear regression machine learning models are examples of a parametric algorithm meaning it's pretty strict about changing it's parameters. This means that they usually have a  high bias making them bad for complex data sets. However, for simple datasets linear regression works as intended.
+In terms of Machine Learning a neuron can be broken to a simple algebraic equation, slope-intercept form (y = mx + b). x as the input data, m as the weights, b as the bias, y as the output. **Inputs** are a set of values that represents data from a data set or another neuron, values passed in through an input serve to adjust and fine tune the weights of a neuron. **weights** control the shape of the linear regression graph, in a neural network all the "nodes" are connected via weights (e.g. output of one neuron connected to another neuron's input). When a neural network is created the weights are randomly initialized with a value in between -1 and 1. As the machine learning model continues to run, loss is calculated and the weights are fine tuned and adjusted to favor certain outputs. With that in mind a weight is the strength of connection between nodes. A negative weight decreases the favorability of an output while a large weight will be a favored output. Throughout the training process these weights will be fine tuned so that the proper conclusion is reached for every output. In short you reduce the weights of the incorrect or unfavorable outputs and increase the weights of favorable or correct outputs. **bias** helps adjust the output in correspondence with the given data, but having a high bias is the result misinterpreting the underlying goal of a dataset. Unfortunately, linear regression machine learning models are examples of a parametric algorithm meaning it's pretty strict about changing it's parameters. This means that they usually have a  high bias making them bad for complex data sets. However, for simple datasets linear regression works as intended.
 
 ## Activation Functions:
 An Activation or Transfer function is an essential part of every neuron, it takes the output from the previous neuron and sees if the value meets the boundaries of the preferred value. For example, if the output doesn't meet a required threshold then the neuron is not activated and the neuron becomes 0. Activation functions withhold useless outputs and assist in weight adjustment.
@@ -47,4 +47,14 @@ Open a Python IDE and import numpy, random from numpy, and Matplotlib.pyplot. Ma
 import numpy as np
 import numpy.random as rand
 import matplotlib.pyplot as plt
+```
+Create a parent class for labeled Neuron:
+```python
+import numpy as np
+import numpy.random as rand
+import matplotlib.pyplot as plt
+
+
+class Neuron:
+    def __init__(self):
 ```
