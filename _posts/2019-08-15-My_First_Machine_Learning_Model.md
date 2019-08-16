@@ -1,5 +1,5 @@
 ---
-title: "Building Perceptron"
+title: "Building Perceptron (An Introduction to Machine/deep learning and Artificial Intelligence)"
 date: 2019-08-15
 tags: [Advanced Projects, Machine Learning, Artificial Intelligence, Python]
 header:
@@ -16,7 +16,7 @@ In 1957 Frank Rosenblatt constructed what is known today as Perceptron at Cornel
 # Neurons and Neural Networks
 ## *parts of a Neuron*
 ![Perceptron](/images/better_image.jpg){:class="img-responsive"}
-In terms of Machine Learning a neuron can be broken to a simple algebraic equation, slope-intercept form (y = mx + b). x as the input data, m as the weights, b as the bias, y as the output. **Inputs** are a set of values that represents data from a data set or another neuron, values passed in through an input serve to adjust and fine tune the weights of a neuron. **weights** control the shape of the linear regression graph, in a neural network all the "nodes" are connected via weights (e.g. output of one neuron connected to another neuron's input). When a neural network is created the weights are randomly initialized with a value between 0 and 1. As the program continues to run
+In terms of Machine Learning a neuron can be broken to a simple algebraic equation, slope-intercept form (y = mx + b). x as the input data, m as the weights, b as the bias, y as the output. **Inputs** are a set of values that represents data from a data set or another neuron, values passed in through an input serve to adjust and fine tune the weights of a neuron. **weights** control the shape of the linear regression graph, in a neural network all the "nodes" are connected via weights (e.g. output of one neuron connected to another neuron's input). When a neural network is created the weights are randomly initialized with a value between 0 and 1. As the machine learning model continues to run, loss is calculated and the weights are fine tuned and adjusted to favor certain outputs. With that in mind a weight is the strength of connection between nodes
 
 
 ## The Hidden layer
