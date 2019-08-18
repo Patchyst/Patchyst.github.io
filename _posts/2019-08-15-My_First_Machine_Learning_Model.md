@@ -1,5 +1,5 @@
 ---
-title: "Building a Neuron in Python"
+title: "Building a Neuron in Python (unfinished)"
 date: 2019-08-15
 tags: [Advanced Projects, Machine Learning, Artificial Intelligence, Python]
 header:
