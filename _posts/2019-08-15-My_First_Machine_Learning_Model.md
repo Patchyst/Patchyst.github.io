@@ -68,10 +68,10 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights variable so you can easily change the weight attribute whenever you need to
+        # add initial_weights so the model can easily adjust the weights
         self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
 ```
-For this project we'll be using the TanH activation function, we don't have to define it because it's built into Numpy. However, you do have to create a function that calls the TanH function and returns the value.
+Now we will be adding our activation function, this will turn our linear data into non-linear data. Don't be intimidated by any of the math for the activation functions because most data scientists try out every activation function to see which one outputs the highest accuracy. You could do all the math for the activation functions before making the model, but it's much easier to go by trial and error and it's common practice. For this project we'll be using the TanH activation function, we don't have to define it because it's built into Numpy. However, you do have to create a function that calls the TanH function and returns the value.
 ```python
 import numpy as np
 import numpy.random as rand
