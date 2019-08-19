@@ -81,6 +81,10 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights variable so you can easily change the weight attribute whenever you need to
+        # add initial_weights so the model can easily adjust the weights
         self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+
+    def activation_function(self, X):
+        return 1 - np.tanh(X)**2
+
 ```
