@@ -210,6 +210,19 @@ input_data = [n/100 for n in range(300)]
 output_data = [linear_function(n/100) for n in range(300)]
 
 input_data = np.asarray([input_data])/100
-output_data = np.asarray([outputt_data])/100
+output_data = np.asarray([output_data])/100
+
+```
+Create an object for your neuron class:
+```python
+def linear_function(x):
+    return 2 * x
+
+
+input_data = [n/100 for n in range(300)]
+output_data = [linear_function(n/100) for n in range(300)]
+
+input_data = np.asarray([input_data])/100
+output_data = np.asarray([output_data])/100
 
 ```
