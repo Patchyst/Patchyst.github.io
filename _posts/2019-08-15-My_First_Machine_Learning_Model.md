@@ -84,7 +84,27 @@ class Neuron:
         # add initial_weights so the model can easily adjust the weights
         self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
 
-    def activation_function(self, X):
-        return 1 - np.tanh(X)**2
+    def activation_function(self, x):
+        return 1 - np.tanh(x)**2
+```
+Now that we've added the weights as attributes to our neuron, and declared an activation function, lets begin the training phase, also known as forward Propagation. Going back to the y = mx + b format, you see that the first thing we must do is multiply the inputs by the weights. This can be done by using another built in numpy function called "dot" that multiply matrices together. Create a another function called learning_step that uses returns the dot product of our 2D arrays and sends it through our activation function:
+```python
+import numpy as np
+import numpy.random as rand
+import matplotlib.pyplot as plt
+
+
+class Neuron:
+    def __init__(self):
+        rand.seed(1)
+        # add initial_weights so the model can easily adjust the weights
+        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+
+    def activation_function(self, x):
+        return 1 - np.tanh(x)**2
+
+    def learning_step(self, x):
+        dot_value = np.dot(x, self.weights)
+        return np.tanh(dot_value)
 
 ```
