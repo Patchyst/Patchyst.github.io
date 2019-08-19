@@ -87,7 +87,7 @@ class Neuron:
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
 ```
-Now that we've added the weights as attributes to our neuron, and declared an activation function, lets begin the training phase, also known as forward Propagation. Going back to the y = mx + b format, you see that the first thing we must do is multiply the inputs by the weights. This can be done by using another built in numpy function called "dot" that multiply matrices together. Create a another function called learning_step that uses returns the dot product of our 2D arrays and sends it through our activation function:
+Now that we've added the weights as attributes to our neuron, and declared an activation function, lets begin the training phase, also known as forward Propagation. Going back to the y = mx + b format, you see that the first thing we must do is multiply the inputs by the weights. This can be done by using another built in numpy function called "dot" that multiply matrices together. Create a another function called training_step that uses returns the dot product of our 2D arrays and sends it through our activation function:
 ```python
 import numpy as np
 import numpy.random as rand
@@ -103,8 +103,8 @@ class Neuron:
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
 
-    def learning_step(self, x):
+    def training_step(self, x):
         dot_value = np.dot(x, self.weights)
         return np.tanh(dot_value)
-
 ```
+Now that we've created methods for the activation function and the training step we can begin creating the learning process for the neuron. Declare a method called learn that takes in four parameters, self, training_steps, train_input, and train_output. Whatever we input for the **training_steps** variables will determine how much training the neuron goes through. The train_input is the input data for the training data. Since this model uses super visional learning we're giving it the desired output so it can compare it with
