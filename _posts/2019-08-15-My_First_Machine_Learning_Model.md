@@ -181,3 +181,6 @@ class Neuron:
             error = train_output - output
             weight_modification = np.dot(train_input.T, (error * self.activation_function(output)))
 ```
+Now our neuron is ready to be trained with sample data, let's get into the process of doing that..
+
+# Creating data to teach our model by:
