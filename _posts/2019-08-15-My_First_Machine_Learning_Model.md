@@ -38,7 +38,7 @@ Since creating a Neuron can be confusing lets it down into steps:
 
 ## *Modules being used in this project*
 ### Numpy
-Numpy is a useful module to use in any Machine Learning Project because it can make massive multidimensional arrays to serve as data sets that have properties that allow them to be iterated easily.
+Numpy is a useful module to use in any Machine Learning Project because it can make massive multidimensional arrays to serve as data sets that have properties that allow them to be changed easily.
 ### Matplotlib
 Matplotlib is being used because it allows us to easily graph large data sets and outputs.
 ## Open a Python IDE...
