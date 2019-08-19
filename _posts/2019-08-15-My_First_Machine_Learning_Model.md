@@ -246,8 +246,14 @@ output_data = output_data.T
 
 ```
 ## Training the Neuron:
-
+To train the neuron we just reference the object along with the learn method we created for training it.
 ```python
+neuron.learn(20000, input_data, output_data)
 
-
+```
+As you can see we are entering the parameters that we initialized while making the function, the neuron will train for the duration of 20,000 and we are using the input_data as the input and output_data as the desired to output that the neuron can compare it's own output with and adjust it's weights based off of. However, making the neuron "learn" is just half the fun we want to watch it's progress. create a variable that has the weights that the neuron is adjusting as it learns:
+```python
+neuron.learn(20000, input_data, output_data)
+weight_constant = neuron.weights[0][0]
+print(weight_constant)
 ```
