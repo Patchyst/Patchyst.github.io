@@ -200,4 +200,16 @@ input_data = [n/100 for n in range(300)]
 output_data = [linear_function(n/100) for n in range(300)]
 
 ```
-The neuron will plot the input data and compare it with the output, adjust the weights, and keep going until it has figured out the right linear function
+The neuron will plot the input data and compare it with the output, adjust the weights, and keep going until it has figured out the right linear function. Next convert the input and output data to numpy arrays.
+```python
+def linear_function(x):
+    return 2 * x
+
+
+input_data = [n/100 for n in range(300)]
+output_data = [linear_function(n/100) for n in range(300)]
+
+input_data = np.asarray([input_data])/100
+output_data = np.asarray([outputt_data])/100
+
+```
