@@ -130,7 +130,7 @@ class Neuron:
     def learn(self, training_duration, train_input, train_output):
         for i in range(training_duration):
 ```
-Inside declare a variable called "output" that returns the result of the training_Step method:
+Inside declare a variable called "output" that returns the result of the training_Step method, and find the error by subtracting the train_output variable by the output variable.:
 ```python
 import numpy as np
 import numpy.random as rand
@@ -153,4 +153,5 @@ class Neuron:
     def learn(self, training_duration, train_input, train_output):
         for i in range(training_duration):
             output = self.training_step(train_input)
+            error = train_output - output
 ```
