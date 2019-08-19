@@ -180,7 +180,24 @@ class Neuron:
             output = self.training_step(train_input)
             error = train_output - output
             weight_modification = np.dot(train_input.T, (error * self.activation_function(output)))
+
 ```
 Now our neuron is ready to be trained with sample data, let's get into the process of doing that..
 
 # Creating data to teach our model by:
+Outside the neuron class create a linear function that the neuron is going to learn:
+```python
+def linear_function(x):
+    return 2 * x
+```
+Now define the input and output data using for loops:
+```python
+def linear_function(x):
+    return 2 * x
+
+
+input_data = [n/100 for n in range(300)]
+output_data = [linear_function(n/100) for n in range(300)]
+
+```
+The neuron will plot the input data and compare it with the output, adjust the weights, and keep going until it has figured out the right linear function
