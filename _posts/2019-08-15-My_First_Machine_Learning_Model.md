@@ -241,6 +241,13 @@ output_data = np.asarray([output_data])/100
 
 neuron = Neuron()
 
-input_data.reshape(300, 1)
+input_data = input_data.reshape(300, 1)
+output_data = output_data.T
+
+```
+## Training the Neuron:
+
+```python
+
 
 ```
