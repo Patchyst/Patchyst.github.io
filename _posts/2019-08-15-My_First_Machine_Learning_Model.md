@@ -225,4 +225,5 @@ output_data = [linear_function(n/100) for n in range(300)]
 input_data = np.asarray([input_data])/100
 output_data = np.asarray([output_data])/100
 
+neuron = Neuron()
 ```
