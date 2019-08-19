@@ -227,3 +227,20 @@ output_data = np.asarray([output_data])/100
 
 neuron = Neuron()
 ```
+Reshape the input_data array into 2D form and transpose the output_data just like what we did in the learn method:
+```python
+def linear_function(x):
+    return 2 * x
+
+
+input_data = [n/100 for n in range(300)]
+output_data = [linear_function(n/100) for n in range(300)]
+
+input_data = np.asarray([input_data])/100
+output_data = np.asarray([output_data])/100
+
+neuron = Neuron()
+
+input_data.reshape(300, 1)
+
+```
