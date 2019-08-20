@@ -315,4 +315,4 @@ As you can see neuron has created a line to match the linear function used for t
 ### Full code
 The fully working code for this project can be found --> [here](https://gist.github.com/Patchyst/f1947498d624972e7a91ed48d1bd7eac) <--
 # What Next?
-Many libraries over the years have been developed over the years to facilitate the process of machine learning such as, TensorFlow, Sci-kitlearn, and Pandas. If you're looking to build a neural network I have a tutorial on an [AI that predicts future stock prices](https://patchyst.github.io/StockPriceForcaster/).
+Many libraries over the years have been developed over the years to facilitate the process of machine learning such as, TensorFlow, Sci-kitlearn, and Pandas. If you're looking to build a neural network I have a tutorial on Tensor Flow and Linear Regression.
