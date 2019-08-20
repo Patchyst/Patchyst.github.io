@@ -77,4 +77,6 @@ multiply = input_node * 2
 
 with tf.Session() as sess:
     print(sess.run(number + 20.0))
+    print(sess.run(multiply, feed_dict={input_node: 45.0}))
 ```
+As you can see we're feeding 45 into the input_node and multipying it.
