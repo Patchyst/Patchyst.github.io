@@ -42,7 +42,7 @@ Numpy is a useful module to use in any Machine Learning Project because it can m
 ### Matplotlib
 Matplotlib is being used because it allows us to easily graph large data sets and outputs.
 ### *disclaimer*
-This project is meant to model the neurons used in neural networks on modules such as tensorflow. This model may not be 100% accurate because the purpose of this project is to give you an understanding of how the individual neuron works before making a whole network of them. If you have any suggestions on how to improve the code I would appreciate it if you emailed it to me.
+This project is meant to model the neurons used in neural networks on modules such as tensorflow. This model may not be 100% accurate because the purpose of this project is to give you an understanding of how the individual neuron works before making a whole network of them. If you have any suggestions on how to improve the code I would appreciate it if you sent it to my [email](https://patchyst.github.io/about/)
 ## Open a Python IDE...
 Open a Python IDE and import numpy, random from numpy, and Matplotlib.pyplot. Make sure you've pip installed these modules and are using an IDE that supports these modules.
 ```python
