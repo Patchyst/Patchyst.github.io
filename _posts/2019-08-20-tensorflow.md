@@ -42,3 +42,4 @@ number = tf.constant(50.0, dtype=tf.float32)
 with tf.Session() as sess:
     print(sess.run(number + 20.0))
 ```
+You might see a few warnings that look like errors, don't worry, as long as at the end you see an output of "70.0".
