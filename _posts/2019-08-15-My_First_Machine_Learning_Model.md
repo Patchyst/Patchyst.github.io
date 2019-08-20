@@ -309,8 +309,7 @@ plt.show()
 You Should see the image:
 
 ![Graph](/images/graph.jpg){:class="img-responsive"}
-And the weight as:
-```python
 
+As you can see neuron has created a line to match the linear function used for the input.
 
-```
+# What Next?
