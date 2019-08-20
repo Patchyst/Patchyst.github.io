@@ -117,3 +117,14 @@ output_node = tf.placeholder(dtype=tf.float32, shape=None)
 slope = tf.Variable(5.0, dtype=tf.float32)
 y_intercept = tf.Variable(1.0, dtype=tf.float32)
 ```
+The 5.0 and 1.0 are the starting values and they will be adjusted as the model "learns". Since we are using a linear regression model we will use y = mx +b format to calculate the models guess:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+output_node = tf.placeholder(dtype=tf.float32, shape=None)
+slope = tf.Variable(5.0, dtype=tf.float32)
+y_intercept = tf.Variable(1.0, dtype=tf.float32)
+# y = mx + b
+conclusion_operation = slope * input_node + y_intercept
+```
