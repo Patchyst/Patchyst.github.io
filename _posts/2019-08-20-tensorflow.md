@@ -79,4 +79,24 @@ with tf.Session() as sess:
     print(sess.run(number + 20.0))
     print(sess.run(multiply, feed_dict={input_node: 45.0}))
 ```
-As you can see we're feeding 45 into the input_node and multipying it.
+As you can see we're feeding 45 into the input_node and multipying it. Since we specified the input shape as none it can take any shape we pass into it.
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+number = tf.constant(50.0, dtype=tf.float32)
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+
+multiply = input_node * 2
+
+with tf.Session() as sess:
+    print(sess.run(number + 20.0))
+    print(sess.run(multiply, feed_dict={input_node: 45.0}))
+    print(sess.run(multiply, feed_dict={input_node: [[3, 3], [4, 4], [5, 5]]}))
+```
+If you passed in the same (3,3) shape as me you should have received the output:
+```python
+[[ 6.  6.]
+ [ 8.  8.]
+ [10. 10.]]
+```
+Every dimensions was multiplied by 2.
