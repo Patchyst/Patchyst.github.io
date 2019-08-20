@@ -99,4 +99,4 @@ If you passed in the same (3,3) shape as me you should have received the output:
  [ 8.  8.]
  [10. 10.]]
 ```
-Every dimensions was multiplied by 2.
+Every element was multiplied by 2. Having the ability to change massive data sets is a crucial part of Machine Learning.
