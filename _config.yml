@@ -111,11 +111,11 @@ author:
   avatar           : "images/profile_photo_two.jpg" # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "Programming and Software Development Portfolio"
   location         : "Charlotte NC"
-  email            : "ptedstory@gmail.com"
+  email            :
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "ptedstory@gmail.com"
+      # url: mailto:your.name@email.com
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
