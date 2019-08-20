@@ -128,3 +128,4 @@ y_intercept = tf.Variable(1.0, dtype=tf.float32)
 # y = mx + b
 conclusion_operation = slope * input_node + y_intercept
 ```
+In order for the model to have pinpoint accuracy we need it to be able to compare it's output with the expected output, find the difference, and adjust it's weights based on the difference. Yes, I'm talking about error, however, this time we'll be using a loss function. To put it simply (and I mean grossly simply) only using error for backpropagation when you get more complex models is not good enough, loss is a way of "mapping" the error data into a real number that the model seeks to lower. Essentially the neural networks goal is to reduce the loss function beyond a threshold or eradicate it completely, it does this by learning from how high or low the loss is then using the process of backpropagation to adjust it's weights in correspondence with whatever is causing the "high" loss.
