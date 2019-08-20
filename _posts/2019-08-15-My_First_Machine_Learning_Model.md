@@ -68,8 +68,7 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights so the model can easily adjust the weights
-        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+        self.weights = 2 * rand.random((1, 1)) - 1
 ```
 Now we will be adding our activation function, this will turn our linear data into non-linear data. Don't be intimidated by any of the math for the activation functions because most data scientists try out every activation function to see which one outputs the highest accuracy. You could do all the math for the activation functions before making the model, but it's much easier to go by trial and error and it's common practice. For this project we'll be using the TanH activation function, we don't have to define it because it's built into Numpy. However, you do have to create a function that calls the TanH function and returns the value.
 ```python
@@ -81,8 +80,7 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights so the model can easily adjust the weights
-        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+        self.weights = 2 * rand.random((1, 1)) - 1
 
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
@@ -97,8 +95,7 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights so the model can easily adjust the weights
-        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+        self.weights = 2 * rand.random((1, 1)) - 1
 
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
@@ -117,8 +114,7 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights so the model can easily adjust the weights
-        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+        self.weights = 2 * rand.random((1, 1)) - 1
 
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
@@ -130,7 +126,7 @@ class Neuron:
     def learn(self, training_duration, train_input, train_output):
         for i in range(training_duration):
 ```
-Inside declare a variable called "output" that returns the result of the training_Step method, and find the error by subtracting the train_output variable by the output variable.:
+Inside declare a variable called "output" that returns the result of the training_Step method, and find the error by subtracting the train_output variable by the output variable and then adjusting the self.weights:
 ```python
 import numpy as np
 import numpy.random as rand
@@ -140,8 +136,7 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights so the model can easily adjust the weights
-        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+        self.weights = 2 * rand.random((1, 1)) - 1
 
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
@@ -154,6 +149,7 @@ class Neuron:
         for i in range(training_duration):
             output = self.training_step(train_input)
             error = train_output - output
+            self.weights += weight_modification
 ```
 Now the hard part, creating a variable for the number the weights need to be adjusted by. We achieve this by taking the dot product of the input data transposed and the error multiplied by the activation function of the "output". Transposing an array just means turning rows of data into columns of data:
 ```python
@@ -165,8 +161,7 @@ import matplotlib.pyplot as plt
 class Neuron:
     def __init__(self):
         rand.seed(1)
-        # add initial_weights so the model can easily adjust the weights
-        self.weights = initial_weights = 2 * rand.random((1, 1)) - 1
+        self.weights = 2 * rand.random((1, 1)) - 1
 
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
@@ -180,6 +175,7 @@ class Neuron:
             output = self.training_step(train_input)
             error = train_output - output
             weight_modification = np.dot(train_input.T, (error * self.activation_function(output)))
+            self.weights += weight_modification
 
 ```
 Now our neuron is ready to be trained with sample data, let's get into the process of doing that..
@@ -245,6 +241,30 @@ input_data = input_data.reshape(300, 1)
 output_data = output_data.T
 
 ```
+Lastly, we must make a variable for the plotted output data using the same equation. We can do this by creating an empty list to append the points to:
+```python
+def linear_function(x):
+    return 2 * x
+
+
+input_data = [n/100 for n in range(300)]
+output_data = [linear_function(n/100) for n in range(300)]
+
+input_data = np.asarray([input_data])/100
+output_data = np.asarray([output_data])/100
+
+neuron = Neuron()
+
+input_data = input_data.reshape(300, 1)
+output_data = output_data.T
+
+y_plotted_data = []
+for i in range(300):
+    y_plotted_data.append(linear_function(i/100)+rand.randint(1, 100)/50)
+
+```
+
+
 ## Training the Neuron:
 To train the neuron we just reference the object along with the learn method we created for training it.
 ```python
@@ -273,5 +293,28 @@ print(weight_constant)
 learning_data = []
 
 for n in input_data:
+    learning_data.append(n*100*weight_constant)
+```
+And Finally we use the matplotlib built in functions plt.plot and plt.show to see our results:
+```python
+neuron.learn(20000, input_data, output_data)
+weight_constant = neuron.weights[0][0]
+print(weight_constant)
+learning_data = []
+
+for n in input_data:
+    learning_data.append(n*100*weight_constant)
+
+plt.plot(y_plotted_data, "bo")
+plt.plot(learning_data, "r-")
+plt.show()
+```
+### *Output*
+You Should see the image:
+
+![Graph](/images/graph.jpg){:class="img-responsive"}
+And the weight as:
+```python
+
 
 ```
