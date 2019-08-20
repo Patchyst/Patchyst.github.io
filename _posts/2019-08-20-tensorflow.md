@@ -54,3 +54,15 @@ input_node = tf.placeholder(dtype=tf.float32, shape=None)
 with tf.Session() as sess:
     print(sess.run(number + 20.0))
 ```
+Setting the shape parameter equal to None means that the node will take in any input regardless of the shape. To test out the input node, lets multiply whatever passes through it by 2:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+number = tf.constant(50.0, dtype=tf.float32)
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+
+double_operation = input_node * 2
+
+with tf.Session() as sess:
+    print(sess.run(number + 20.0))
+```
