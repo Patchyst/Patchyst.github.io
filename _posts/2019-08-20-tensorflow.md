@@ -347,6 +347,7 @@ There you have it a fully working neural network lets look over the output now.
 If you used the same data as me you should get an output that looks similar to this:
 
 ![output](/images/tfgraph.jpg){:class="img-responsive"}
+
 As you can see the first guess is WAY off because the Neural Network has nothing to go off of, but those clever machines learn quickly and you can see how fast it hones in on the right answer.
 ## *The full code*
 If you're looking for the full code you can --> [click here](https://gist.github.com/Patchyst/e431fb82d45f93513f4c6442a2cbe7fe) <--
