@@ -275,13 +275,11 @@ As you can see we are entering the parameters that we initialized while making t
 ```python
 neuron.learn(20000, input_data, output_data)
 weight_constant = neuron.weights[0][0]
-print(weight_constant)
 ```
 Now create an empty list that we will append weight constants to and plot to watch the gradual learning of the proper linear function:
 ```python
 neuron.learn(20000, input_data, output_data)
 weight_constant = neuron.weights[0][0]
-print(weight_constant)
 learning_data = []
 
 ```
@@ -289,7 +287,6 @@ use a for loop to append the adjusting of weights to the learning_data:
 ```python
 neuron.learn(20000, input_data, output_data)
 weight_constant = neuron.weights[0][0]
-print(weight_constant)
 learning_data = []
 
 for n in input_data:
@@ -299,7 +296,6 @@ And Finally we use the matplotlib built in functions plt.plot and plt.show to se
 ```python
 neuron.learn(20000, input_data, output_data)
 weight_constant = neuron.weights[0][0]
-print(weight_constant)
 learning_data = []
 
 for n in input_data:
