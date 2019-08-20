@@ -172,3 +172,23 @@ init = tf.global_variables_initializer()
 with tf.Session() as sess:
     sess.run(init)
 ```
+Outside of the Session create two sets for the x and y values to serve as input data:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+output_node = tf.placeholder(dtype=tf.float32, shape=None)
+slope = tf.Variable(5.0, dtype=tf.float32)
+y_intercept = tf.Variable(1.0, dtype=tf.float32)
+conclusion_operation = slope * input_node + y_intercept
+error_squared = tf.square(conclusion_operation - output_node)
+loss = tf.reduce_mean(error_squared)
+init = tf.global_variables_initializer()
+
+x_values = [2, 4, 6, 8, 10]
+y_values = [1, 3, 5, 7, 9]
+
+
+with tf.Session() as sess:
+    sess.run(init)
+```
