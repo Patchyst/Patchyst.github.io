@@ -5,4 +5,4 @@ header:
   image: "/images/about.jpg"
 ---
 
-This website is far from finished with projects such as An AI that predicts future stock prices, image recognition software, and guides to TensorFlow planned for the future.
+This website is far from finished with projects such as An AI that predicts future stock prices, image recognition software, and guides to TensorFlow planned for the future. I would greatly appreciate any suggestions for future projects, code fixes/improvements, and corrections all of which can be sent to email: ptedstory@gmail.com.
