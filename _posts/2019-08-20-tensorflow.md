@@ -14,7 +14,7 @@ In a Python IDE(my favorite is pycharm with the anaconda enviroment plugin) impo
 ```python
 import tensorflow as tf
 ```
-Unlike many other machine learning modules, TensorFlow can do everything that modules like Numpy and Matplotlib can do built into it. This tight integration rids us of many type errors since we'll being using TensorFlow variables along side TensorFlow methods. For example, instead of using a Numpy array we can use tensors which are a special type of multidimensional array unique to TensorFlow. Since machine learning uses massive datasets and plots them on a graph sometimes the graphs are not fully cleared. Luck for us TensorFlow has a built in funciton for wiping all data that may be crowding our graph:
+Unlike many other machine learning modules, TensorFlow can do everything that modules like Numpy and Matplotlib can do built into it. This tight integration rids us of many type errors since we'll being using TensorFlow variables along side TensorFlow methods. For example, instead of using a Numpy array we can use tensors which are a special type of multidimensional array unique to TensorFlow. Since machine learning uses massive datasets and plots them on a graph sometimes the graphs are not fully cleared. Lucky for us, TensorFlow has a built in funciton for wiping all data that may be crowding our graph:
 ```python
 import tensorflow as tf
 tf.reset_default_graph()
