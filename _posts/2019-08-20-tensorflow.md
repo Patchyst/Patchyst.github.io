@@ -61,7 +61,19 @@ tf.reset_default_graph()
 number = tf.constant(50.0, dtype=tf.float32)
 input_node = tf.placeholder(dtype=tf.float32, shape=None)
 
-double_operation = input_node * 2
+multiply = input_node * 2
+
+with tf.Session() as sess:
+    print(sess.run(number + 20.0))
+```
+If you try to run the multiply operation right now you would probably get an error because we haven't passed any data into the input node. We pass data into the input node using the feed_dict parameter:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+number = tf.constant(50.0, dtype=tf.float32)
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+
+multiply = input_node * 2
 
 with tf.Session() as sess:
     print(sess.run(number + 20.0))
