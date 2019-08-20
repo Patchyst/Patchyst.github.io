@@ -25,4 +25,20 @@ import tensorflow as tf
 tf.reset_default_graph()
 number = tf.constant(50.0, dtype=tf.float32)
 ```
-The **constant** part is specifying the type of variable we want to create which in our case is a constant, **50.0** is the variable value, and **tf.float32** is specifying that our value(s)(50.0) equals a float data type. You'll probably see tf.float32 as the data type for almost every TensorFlow variable.
+The **constant** part is specifying the type of variable we want to create which in our case is a constant, **50.0** is the variable value, and **tf.float32** is specifying that our value(s)(50.0) equals a float data type. You'll probably see tf.float32 as the data type for almost every TensorFlow variable. Before we can do any operations to our constant or to anything for that matter, we have to start a TensorFlow sessions.
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+number = tf.constant(50.0, dtype=tf.float32)
+
+with tf.Session() as sess:
+```
+This begins our sessions under the name of sess. I renamed it to sess so we can run operations easily in the session. To show you lets add 20.0 to our constant:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+number = tf.constant(50.0, dtype=tf.float32)
+
+with tf.Session() as sess:
+    print(sess.run(number + 20.0))
+```
