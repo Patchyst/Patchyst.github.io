@@ -314,3 +314,4 @@ You Should see the image:
 As you can see neuron has created a line to match the linear function used for the input.
 
 # What Next?
+Many libraries over the years have been developed over the years to facilitate the process of machine learning such as, TensorFlow, Sci-kitlearn, and Pandas. If you're looking for a project to continue 
