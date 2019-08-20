@@ -44,4 +44,13 @@ with tf.Session() as sess:
 ```
 You might see a few warnings that look like errors, don't worry, as long as at the end you see an output of "70.0".
 ## *Passing in Input Data*
-When passing input data into a computational graph, TensorFlow uses placeholders to take in this data. By adjusting the parameters of the placeholder nodes you can change the type of input data that is fed into the graph or network. Every placeholder node has some sort of parameters for shape, shape is the number of dimensions and elements a tensor has. For example, [1,2,3] is one dimension with 3 elements(3), [[1,2],[3,4]] is 2 dimensions with 2 elements per dimension(2,2). 
+When passing input data into a computational graph, TensorFlow uses placeholders to take in this data. By adjusting the parameters of the placeholder nodes you can change the type of input data that is fed into the graph or network. Every placeholder node has some sort of parameters for shape, shape is the number of dimensions and elements a tensor has. For example, [1,2,3] is one dimension with 3 elements(3), [[1,2],[3,4]] is 2 dimensions with 2 elements per dimension(2,2). Lets create a variable for placeholder input data in the same format that we made the constant variable:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+number = tf.constant(50.0, dtype=tf.float32)
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+
+with tf.Session() as sess:
+    print(sess.run(number + 20.0))
+```
