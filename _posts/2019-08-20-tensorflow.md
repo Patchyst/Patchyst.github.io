@@ -19,3 +19,10 @@ Unlike many other machine learning modules, TensorFlow can do everything that mo
 import tensorflow as tf
 tf.reset_default_graph()
 ```
+Using this function should be the first thing you do before every model. Now time to familiarize you with some of the basic functionalities in TensorFlow. To begin, you can create a constant tensor variable using tf.variable_type(value, dtype = datatype). For this example we'll create a constant to keep it simple:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+number = tf.constant(50.0, dtype=tf.float32)
+```
+The **constant** part is specifying the type of variable we want to create which in our case is a constant, **50.0** is the variable value, and **tf.float32** is specifying that our value(s)(50.0) equals a float data type. You'll probably see tf.float32 as the data type for almost every TensorFlow variable.
