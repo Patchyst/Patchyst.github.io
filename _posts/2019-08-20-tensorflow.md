@@ -172,7 +172,7 @@ init = tf.global_variables_initializer()
 with tf.Session() as sess:
     sess.run(init)
 ```
-Outside of the Session create two sets for the x and y values to serve as input data:
+Outside of the Session create two sets for the x and y values to serve as input data and output data:
 ```python
 import tensorflow as tf
 tf.reset_default_graph()
