@@ -108,3 +108,12 @@ tf.reset_default_graph()
 input_node = tf.placeholder(dtype=tf.float32, shape=None)
 output_node = tf.placeholder(dtype=tf.float32, shape=None)
 ```
+Since the model is guessing the equation for the line the slope and y intercept will be frequently changing. With this in mind we'll create a tf.Variable class since it can be initialized with a starting value and it's properties can be easily altered by the model.
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+output_node = tf.placeholder(dtype=tf.float32, shape=None)
+slope = tf.Variable(5.0, dtype=tf.float32)
+y_intercept = tf.Variable(1.0, dtype=tf.float32)
+```
