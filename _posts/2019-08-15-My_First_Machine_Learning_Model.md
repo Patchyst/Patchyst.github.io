@@ -312,6 +312,7 @@ You Should see the image:
 ![Graph](/images/graph.jpg){:class="img-responsive"}
 
 As you can see neuron has created a line to match the linear function used for the input.
-
+### Full code
+The fully working code for this project can be found --> here <--
 # What Next?
-Many libraries over the years have been developed over the years to facilitate the process of machine learning such as, TensorFlow, Sci-kitlearn, and Pandas. If you're looking for a project to continue 
+Many libraries over the years have been developed over the years to facilitate the process of machine learning such as, TensorFlow, Sci-kitlearn, and Pandas. If you're looking to build a neural network I have a tutorial on an AI that can predict stock prices.
