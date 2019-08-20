@@ -104,7 +104,7 @@ class Neuron:
         dot_value = np.dot(x, self.weights)
         return np.tanh(dot_value)
 ```
-Now that we've created methods for the activation function and the training step we can begin creating the learning process for the neuron. Declare a method called learn that takes in four parameters, self, training_duration, train_input, and train_output. Whatever we input for the **training_duration** variables will determine how much training the neuron goes through. The **train_input** is the input data for the training data. Since this model uses super visional learning we're giving it the desired output (**train_output**) so it can compare it with it's own output, find the error, and adjust the weights. Inside the learn method run a for loop that "trains" the model by the training_duration variable:
+Now that we've created methods for the activation function and the training step we can begin creating the learning process for the neuron. Declare a method called learn that takes in four parameters, self, training_duration, train_input, and train_output. Whatever we input for the **training_duration** variable will determine how much training the neuron goes through. The **train_input** is the input data for the training data. Since this model uses super visional learning we're giving it the desired output (**train_output**) so it can compare it with it's own output, find the error, and adjust the weights. Inside the learn method run a for loop that "trains" the model by the training_duration variable:
 ```python
 import numpy as np
 import numpy.random as rand
