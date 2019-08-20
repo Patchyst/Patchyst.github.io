@@ -34,11 +34,11 @@ Since creating a Neuron can be confusing lets it down into steps:
 * 1- Take in the training data as an input
 * 2- Neuron processes the data and produces a loss
 * 3- Adjust the weights based off the loss
-* 4- Repeat steps 1-3 until the expected output is methods
+* 4- Repeat steps 1-3 until the expected output is met
 
 ## *Modules being used in this project*
 ### Numpy
-Numpy is a useful module to use in any Machine Learning Project because it can make massive multidimensional arrays to serve as data sets that have properties that allow them to be changed easily.
+Numpy is a useful module to use in any Machine Learning Project because it can make massive multidimensional arrays to serve as data sets which can be changed with ease.
 ### Matplotlib
 Matplotlib is being used because it allows us to easily graph large data sets and outputs.
 ## Open a Python IDE...
@@ -70,7 +70,7 @@ class Neuron:
         rand.seed(1)
         self.weights = 2 * rand.random((1, 1)) - 1
 ```
-Now we will be adding our activation function, this will turn our linear data into non-linear data. Don't be intimidated by any of the math for the activation functions because most data scientists try out every activation function to see which one outputs the highest accuracy. You could do all the math for the activation functions before making the model, but it's much easier to go by trial and error and it's common practice. For this project we'll be using the TanH activation function, we don't have to define it because it's built into Numpy. However, you do have to create a function that calls the TanH function and returns the value.
+Next add the activation function, this will turn our linear data into non-linear data. Don't be intimidated by any of the math for the activation function because most data scientists try out every activation function to see which one outputs the highest accuracy. You could do all the math for the activation functions before making the model, but it's much easier to go by trial and error and it's common practice. For this project we'll be using the TanH activation function, we don't have to define it because it's built into Numpy. However, you do have to create a function that calls the TanH function and returns the value.
 ```python
 import numpy as np
 import numpy.random as rand
@@ -85,7 +85,7 @@ class Neuron:
     def activation_function(self, x):
         return 1 - np.tanh(x)**2
 ```
-Now that we've added the weights as attributes to our neuron, and declared an activation function, lets begin the training phase, also known as forward Propagation. Going back to the y = mx + b format, you see that the first thing we must do is multiply the inputs by the weights. This can be done by using another built in numpy function called "dot" that multiply matrices together. Create a another function called training_step that uses returns the dot product of our 2D arrays and sends it through our activation function:
+Now that we've added the weights as attributes to our neuron, and declared an activation function, lets begin the training phase, also known as forward Propagation. Going back to the y = mx + b format, you see that the first thing we must do is multiply the inputs by the weights. This can be done by using another built in numpy function called "dot" that multiply matrices together. Create a another function called training_step that returns the dot product of our 2D arrays and sends it through our activation function:
 ```python
 import numpy as np
 import numpy.random as rand
