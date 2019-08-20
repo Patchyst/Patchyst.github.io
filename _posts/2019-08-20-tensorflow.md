@@ -100,3 +100,11 @@ If you passed in the same (3,3) shape as me you should have received the output:
  [10. 10.]]
 ```
 Every element was multiplied by 2. Having the ability to change massive data sets is a crucial part of Machine Learning.
+## Making the Machine Learning Model:
+For this Project the neural network will guess the function of a linear function. You will be able to watch each guess as the network gets closer and closer to getting the function. Create a new file or clear your IDE workspace, then create two placeholders for the input and expected output:
+```python
+import tensorflow as tf
+tf.reset_default_graph()
+input_node = tf.placeholder(dtype=tf.float32, shape=None)
+output_node = tf.placeholder(dtype=tf.float32, shape=None)
+```
