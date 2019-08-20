@@ -44,4 +44,4 @@ with tf.Session() as sess:
 ```
 You might see a few warnings that look like errors, don't worry, as long as at the end you see an output of "70.0".
 ## *Passing in Input Data*
-When passing input data into a computational graph, TensorFlow uses placeholders to take in this data. By adjusting the parameters of the placeholder nodes you can change the type of input data that is fed into the graph or network.
+When passing input data into a computational graph, TensorFlow uses placeholders to take in this data. By adjusting the parameters of the placeholder nodes you can change the type of input data that is fed into the graph or network. Every placeholder node has some sort of parameters for shape, shape is the number of dimensions, rows, columns, and elements a tensor has.
