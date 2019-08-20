@@ -26,8 +26,8 @@ import tensorflow as tf
 tf.reset_default_graph()
 number = tf.constant(50.0, dtype=tf.float32)
 ```
-The **constant** part is specifying the type of variable we want to create, which in our case is a constant, **50.0** is the variable value, and **tf.float32** is specifying that our value(s)(50.0) equals a float data type. You'll probably see tf.float32 as the data type for almost every tensor. Before we can do any operations to our constant or to anything for that matter, we have to start a TensorFlow session.
-###Cblock
+The **constant** part is specifying the type of variable we want to create, which in our case is a constant, **50.0** is the variable value, and **float32** is specifying that our value(s)(50.0) equals a float data type. You'll probably see float32 as the data type for almost every tensor. Before we can do any operations to our constant or to anything for that matter, we have to start a TensorFlow session.
+
 ```python
 import tensorflow as tf
 tf.reset_default_graph()
