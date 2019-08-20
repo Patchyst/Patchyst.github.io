@@ -1,5 +1,5 @@
 ---
-title: "Build a Neural Network with TensorFlow"
+title: "Build a Neural Network with TensorFlow (unfinished)"
 date: 2019-08-20
 tags: [Advanced Projects, Machine Learning, Artificial Intelligence, Python]
 header:
