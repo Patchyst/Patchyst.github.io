@@ -80,7 +80,7 @@ print(type(string_variable))
 print(type(float_variable))
 
 ```
- if all the parenthesis is confusing you think of it as layers, the type function is inside the parameters of the print() and inside the type is the variable. So your finding the type of float_variable type(float_variable) and putting it in the print function so it shows you the result.
+ if all the parenthesis is confusing you  can think of it as layers, the type function is inside the parameters of the print() and inside the type is the variable. So your finding the type of float_variable type(float_variable) and putting it in the print function so it shows you the result.
 Output:
 ```python
 # str is short for string
