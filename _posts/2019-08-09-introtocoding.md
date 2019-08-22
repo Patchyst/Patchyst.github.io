@@ -108,11 +108,11 @@ Hello world.
 ```
 The next data type is called "Boolean". (Don't ask me why it's called that) A Boolean can only be one of two things, True or False. And with that we segue into the next topic Conditionals.
 # Conditionals (making a password program)
-I mentioned Boolean values last on purpose because conditionals are closely related with them. conditionals output True or False depending on the conditions passed in. If False then the program will end if there are no alternative conditionals. If a condition is true then whatever is "Inside" that conditional is run. You'll see what I mean here in a second. first let's use the input() function all this function does is take in input from the user. The default data type for input() is a string meaning anything the user types into the input will be automatically converted into a string unless instructed otherwise. To begin, lets start off by creating a variable for input called "password":
+I mentioned Boolean values last on purpose because conditionals are closely related with them. conditionals output True or False depending on the conditions passed in. If False then the program will end if there are no alternative conditionals. If a condition is true then whatever is "Inside" that conditional is run. You'll see what I mean here in a second. first let's use the input() function, all this function does is take in input from the user. The default data type for input() is a string meaning anything the user types into the input will be automatically converted into a string unless instructed otherwise. To begin, lets start off by creating a variable for input called "password":
 ```python
 password = input("Please set a password: ")
 ```
-When the program is run "Please set a password" will appear in the console window and whatever the user types in will be stored in the "password" variable. Create another input variable that asks the user for their password:
+When the program is run "Please set a password" will appear in the console window and whatever the user types in will be stored in the password variable. Create another input variable that asks the user for their password:
 ```python
 password = input("Please set a password: ")
 ask_password = input("Enter password:")
@@ -124,7 +124,7 @@ ask_password = input("Enter password:")
 if ask_password == password:
     print("Granted")
 ```
-*breaking it down*: After the two inputs are entered the if statement runs and checks to see if the ask_password is equal to whatever value is stored in the password variable. Since we use the "=" operator to assign variables the double equals sign "==" is used to check if one value is equal to another (just like the = sign in math). Lastly, you may be asking "Why is the print statement a few space to the right". This is used to show that the print() function is "associated" with the if statement. Meaning it will only print "Granted" if the If statement's condition is met. Now let's say the user inputs the wrong password, then what? Well, we can use an "else" statement which runs if no other conditionals are True.
+*breaking it down*: After the two inputs are entered the if statement runs and checks to see if the ask_password is equal to whatever value is stored in the password variable. Since we use the "=" operator to assign variables the double equals sign "==" is used to check if one value is equal to another (just like the = sign in math). Lastly, you may be asking "Why is the print statement a few space to the right". This is used to show that the print() function is associated with the if statement, meaning it will only print "Granted" if the If statement's condition is met. Now let's say the user inputs the wrong password, then what? Well, we can use an "else" statement which runs if no other conditionals are True.
 ```python
 password = input("Please set a password: ")
 ask_password = input("Enter password:")
