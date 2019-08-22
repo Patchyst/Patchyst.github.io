@@ -40,7 +40,7 @@ number = 4
 number += 7
 number -= 2
 ```
-We just added 7 to the number variable then subtracted 2. That means that the "number" variable should be equal to 9. To test this we would just use the print() function (a function is pre-built in code used to perform specific tasks.) to print out the variable's value in the console screen:
+We just added 7 to the number variable then subtracted 2. That means that the "number" variable should be equal to 9. To test this we would just use the print() function (a function is built-in code used to perform specific tasks.) to print out the variable's value in the console screen:
 ```python
 number = 4
 # adding 7 to the number variable
