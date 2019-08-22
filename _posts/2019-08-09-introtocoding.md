@@ -124,7 +124,7 @@ ask_password = input("Enter password:")
 if ask_password == password:
     print("Granted")
 ```
-*breaking it down*: After the two inputs are entered the if statement runs and checks to see if the ask_password is equal to whatever value is stored in the password variable. Since we use the "=" operator to assign variables the double equals sign "==" is used to check if one value is equal to another (just like the = sign in math). Lastly, you may be asking "Why is the print statement a few space to the right". This is used to show that the print() function is associated with the if statement, meaning it will only print "Granted" if the If statement's condition is met. Now let's say the user inputs the wrong password, then what? Well, we can use an "else" statement which runs if no other conditionals are True.
+*breaking it down*: After the two inputs are entered the if statement runs and checks to see if the ask_password is equal to whatever value is stored in the password variable. Since we use the "=" operator to assign variables the double equals sign "==" is used to check if one value is equal to another (just like the = sign in math). Lastly, you may be asking "Why is the print statement a few space to the right?" This is used to show that the print() function is associated with the if statement, meaning it will only print "Granted" if the If statement's condition is met. Now let's say the user inputs the wrong password, then what? Well, we can use an "else" statement which runs if no other conditionals are True.
 ```python
 password = input("Please set a password: ")
 ask_password = input("Enter password:")
