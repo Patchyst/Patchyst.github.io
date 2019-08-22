@@ -108,7 +108,7 @@ Hello world.
 ```
 The next data type is called "Boolean". (Don't ask me why it's called that) A Boolean can only be one of two things, True or False. And with that we segue into the next topic Conditionals.
 # Conditionals (making a password program)
-I mentioned Boolean values last on purpose because conditionals are closely related with them. conditional produce True or False depending on the conditions passed in. If False then the program will end if there are no alternative conditionals. You'll see what I mean here in a second. first let's use the input() function all this function does is take in input from the user. The default data type for input() is a string meaning anything the user types into the input will be automatically converted into a string unless instructed otherwise. To begin, lets start off by creating a variable for input called "password":
+I mentioned Boolean values last on purpose because conditionals are closely related with them. conditionals output True or False depending on the conditions passed in. If False then the program will end if there are no alternative conditionals. You'll see what I mean here in a second. first let's use the input() function all this function does is take in input from the user. The default data type for input() is a string meaning anything the user types into the input will be automatically converted into a string unless instructed otherwise. To begin, lets start off by creating a variable for input called "password":
 ```python
 password = input("Please set a password: ")
 ```
