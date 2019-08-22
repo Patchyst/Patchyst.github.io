@@ -145,7 +145,7 @@ Please set a password: 1234
 Enter password:1234
 Granted
 ```
-Now what if we want another if statement to run after the if statement? Well, this is known as an elif statement and it's basically the same thing as having another if statement. For example add this line of code in between the if and else statements:
+Now what if we want another if statement to run if the first if statement is false? Well, this is known as an elif statement and it's basically the same thing as having another if statement. For example add this line of code in between the if and else statements:
 
 ```python
 password = input("Please set a password: ")
