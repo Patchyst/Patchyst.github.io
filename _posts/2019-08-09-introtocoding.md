@@ -163,7 +163,7 @@ Please set a password: PasSworD
 Enter password:1234
 5678
 ```
-The popular text-based game from 1971, "The Oregon Trail" is based off the same concepts of conditionals. For example:
+The popular text-based game from 1971, "The Oregon Trail" is based off the same concepts as conditionals. For example:
 ```python
 choice = input("Would you like to A. Swim across the pond, B. Fight the bear, or C. Run")
 if choice == "A":
