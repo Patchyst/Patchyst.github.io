@@ -1,6 +1,6 @@
 ---
 title: "Binary numbers, logic gates, binary Encryption"
-date: 2019-08-10
+date: 2019-08-14
 tags: [Binary and Hexadecimal]
 header:
   image: "images/binarybannerone.jpg"
