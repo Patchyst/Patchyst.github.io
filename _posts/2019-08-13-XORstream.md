@@ -1,6 +1,6 @@
 ---
 title: "XOR Stream Cipher"
-date: 2019-08-13
+date: 2019-08-12
 tags: [Advanced Projects, Encryption, Binary and Hexadecimal, Python, Cyber Security]
 header:
   image: "images/cyber.jpg"
