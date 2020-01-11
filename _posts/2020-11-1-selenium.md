@@ -26,13 +26,33 @@ Running the code so far should produce a blank page with a banner notifying you 
 
 ![WEBDRIVER-EX1](/images/chromdriver.png){:class="img-responsive"}
 
-Next use the web_driver variable's function, get(), to pull up the webpage you wish to automate activity or scrape data from:
+Next use the web_driver variable's function get() to pull up the webpage you wish to automate activity or scrape data from. Access the website's html and find the element you wish to interact with::
 
 ```python
 from selenium import webdriver
 web_driver = webdriver.Chrome("/Users/patrick/Desktop/chromedriver")
-web_driver.get("https://selenium.dev/")
+web_driver.get("https://patchyst.github.io/")
 ```
-Next access the website's Elements and find the element you wish to interact with:
+
 
  ![WEBDRIVER-EX1](/images/webdriver2.png){:class="img-responsive"}
+
+ Selenium offers a variety of methods for finding the target element, each of which are used in specific cases. Elements can be located by ID, name, class name, tag name, link text, CSS selector, and XPath. Because I don't have an easy way of finding my element, I'm using xpath which uses an XML path expression to locate elements on a web page. Finally store the element in a variable (make sure you aren't using the plural form of element or a list will be returned):
+
+ ```python
+ from selenium import webdriver
+ web_driver = webdriver.Chrome("/Users/patrick/Desktop/chromedriver")
+ web_driver.get("https://patchyst.github.io/")
+ target_element = web_driver.find_element_by_xpath(r'//*[@id="site-nav"]/ul[1]/li[1]/a')
+ ```
+ Now that the target element has been found and stored in a variable it can be interacted with. Selenium has functions for interacting with everything from text boxes to drag and drop boxes, but for **now** lets keep it simple and click on the element (be sure to close the driver when the program is finished):
+
+ ```python
+ from selenium import webdriver
+ web_driver = webdriver.Chrome("/Users/patrick/Desktop/chromedriver")
+ web_driver.get("https://patchyst.github.io/")
+ target_element = web_driver.find_element_by_xpath(r'//*[@id="site-nav"]/ul[1]/li[1]/a')
+ target_element.click()
+ web_driver.close()
+ ```
+ In my case, my element was a link, so the webpage immediately redirected to the page.
