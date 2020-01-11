@@ -55,4 +55,4 @@ web_driver.get("https://patchyst.github.io/")
  target_element.click()
  web_driver.close()
  ```
- In my case, my element was a link, so the webpage immediately redirected to the page.
+ In my case, the element was a link, so the webpage immediately redirected to the page.
