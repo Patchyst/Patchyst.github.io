@@ -25,3 +25,14 @@ web_driver = webdriver.Chrome(r"C:\Users\pteds\Desktop\Selenium\chromedriver.exe
 Running the code so far should produce a blank page with a banner notifying you that chrome is being controlled by automated test software:
 
 ![WEBDRIVER-EX1](/images/chromdriver.png){:class="img-responsive"}
+
+Next use the web_driver variable's function, get(), to pull up the webpage you wish to automate activity or scrape data from:
+
+```python
+from selenium import webdriver
+web_driver = webdriver.Chrome("/Users/patrick/Desktop/chromedriver")
+web_driver.get("https://selenium.dev/")
+```
+Next access the website's Elements and find the element you wish to interact with:
+
+ ![WEBDRIVER-EX1](/images/webdriver2.png){:class="img-responsive"}
