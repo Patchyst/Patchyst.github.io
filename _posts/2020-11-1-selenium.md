@@ -1,6 +1,6 @@
 ---
 title: "Automating Web Activity with Selenium"
-date: 2019-08-20
+date: 2020-01-01
 tags: [Advanced Projects,Python]
 header:
   image: "images/tensor.jpg"
