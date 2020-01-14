@@ -1,4 +1,4 @@
-Copy the code below and place it in your 404.md file.
+
 
 <script type="text/javascript">
   var GOOG_FIXURL_LANG = 'en';
