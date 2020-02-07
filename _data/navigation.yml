@@ -4,8 +4,8 @@ main:
     url: /about/
   - title: "Programming Projects"
     url: /coding-projects/
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+  - title: "Archived Projects"
+    url: /archived-projects/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
