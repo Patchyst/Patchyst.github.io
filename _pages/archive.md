@@ -6,7 +6,7 @@ author_profile: true
 header:
   image: "/images/machinebanner.jpg"
 ---
-{% include group-by-array collection=site.posts field="tags" %}
+{% include group-by-array collection=site.archived_posts field="tags" %}
 
 {% for tag in group_names %}
   {% assign posts = group_items[forloop.index0] %}
