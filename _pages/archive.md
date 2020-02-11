@@ -9,7 +9,7 @@ header:
 {% include group-by-array collection=site.archived_posts field="tags" %}
 
 {% for tag in group_names %}
-  {% assign posts = group_items[forloop.index0] %}
+  {% assign archived_posts = group_items[forloop.index0] %}
   <h2 id="{{ tag | slugify }}" class="archive__subtitle">{{ tag }}</h2>
   {% for post in archived_posts %}
     {% include archive-single.html %}
