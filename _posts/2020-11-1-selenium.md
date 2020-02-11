@@ -1,7 +1,7 @@
 ---
 title: "Automating Web Activity with Selenium"
 date: 2020-01-01
-tags: [Advanced Projects,Python]
+tags: [Advanced Projects, Python]
 header:
   image: "images/tensor.jpg"
 excerpt: "Use Python's Selenium library to automate web activity"

@@ -1,7 +1,7 @@
 ---
 title: "Intro to Programming part 1"
 date: 2019-08-09
-tags: [Python, Coding Bootcamp]
+tags: [Python]
 header:
   image: "images/pythonbanner.jpg"
 excerpt: "An introduction to the world of programming"

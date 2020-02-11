@@ -1,7 +1,7 @@
 ---
 title: "Build a Neural Network with TensorFlow"
 date: 2019-08-20
-tags: [Advanced Projects, Machine Learning, Artificial Intelligence, Python]
+tags: [Advanced Projects, Machine Learning, Python]
 header:
   image: "images/tensor.jpg"
 excerpt: "Use a module developed by Google to program a neural network"

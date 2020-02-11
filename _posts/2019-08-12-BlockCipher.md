@@ -1,7 +1,7 @@
 ---
 title: "Hexadecimal Block Cipher Encryption"
 date: 2019-08-12
-tags: [Advanced Projects, Encryption, Binary and Hexadecimal, Python, Cyber Security]
+tags: [Advanced Projects, Python, Cyber Security]
 header:
   image: "images/encryption_ban.jpg"
 excerpt: "A secure Block Cipher encryption made using hexadecimal and binary"

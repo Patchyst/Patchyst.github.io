@@ -1,7 +1,7 @@
 ---
 title: "Hexadecimal and Character Codes"
 date: 2019-08-10
-tags: [Binary and Hexadecimal]
+tags: [Python]
 header:
   image: "images/hex_two.jpg"
 excerpt: "Learn the fundamentals of hexadecimal while preparing to make a hexadecimal encryption(Block Cipher)"

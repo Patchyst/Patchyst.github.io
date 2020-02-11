@@ -1,7 +1,7 @@
 ---
 title: "Building a Neuron in Python"
 date: 2019-08-15
-tags: [Advanced Projects, Machine Learning, Artificial Intelligence, Python]
+tags: [Advanced Projects, Machine Learning, Python]
 header:
   image: "images/machinelearningban.jpg"
 excerpt: "An Introduction to Machine/deep learning and Artificial Intelligence"
