@@ -1,6 +1,6 @@
 ---
 title: "Introduction to Keyboard Injectors with Rick Astley (UNFINISHED)"
-date: 2020-2-11
+date: 2020-02-11
 tags: [Advanced Projects, Bash]
 header:
   image: "images/maltronix.jpg"
