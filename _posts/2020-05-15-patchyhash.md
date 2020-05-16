@@ -16,7 +16,11 @@ The only two required arguments is the path to the hash file and the path to the
 ```python
 patchyhash /root/shapass.txt /root/wordlists/rockyou.txt
 ```
-However, if no hashing algorithm is specified then patchyhash will default to md5.
+If you're using Kali Linux the wordlists such as rockyou.txt will be stored in user/share/wordlists:
+```python
+patchyhash /root/shapass.txt /usr/share/wordlists/rockyou.txt
+```
+If no hashing algorithm is specified then patchyhash will default to md5.
 ```python
 --hash_type
 ```
@@ -40,3 +44,5 @@ Alright so I want to view the process so our final command will be:
 ```python
 patchyhash /root/shapass.txt /root/wordlists/rockyou.txt --hash_type sha256 -va
 ```
+The output (running on a kali VM):
+![hexadecimal-conversion](/images/patchyout.png){:class="img-responsive"}
