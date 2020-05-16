@@ -46,3 +46,4 @@ patchyhash /root/shapass.txt /root/wordlists/rockyou.txt --hash_type sha256 -va
 ```
 The output (running on a kali VM):
 ![hexadecimal-conversion](/images/patchyout.png){:class="img-responsive"}
+## DES
