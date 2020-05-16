@@ -16,7 +16,7 @@ The only two required arguments is the path to the hash file and the path to the
 ```python
 patchyhash /root/shapass.txt /root/wordlists/rockyou.txt
 ```
-If you're using Kali Linux the wordlists such as rockyou.txt will be stored in user/share/wordlists:
+If you're using Kali Linux wordlists such as rockyou.txt will be stored in us/share/wordlists:
 ```python
 patchyhash /root/shapass.txt /usr/share/wordlists/rockyou.txt
 ```
