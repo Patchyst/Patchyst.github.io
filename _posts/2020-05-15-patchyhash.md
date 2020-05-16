@@ -32,7 +32,7 @@ This will let you specify the sha256 hashing algorithm:
 ```python
 patchyhash /root/shapass.txt /root/wordlists/rockyou.txt --hash_type sha256
 ```
-If you want to view brute force process:
+If you want to view the brute force process:
 ```python
 --view_all
 ```
