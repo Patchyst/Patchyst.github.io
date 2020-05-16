@@ -28,7 +28,7 @@ or
 ```python
 -ht
 ```
-This will let you specify a hashing algorithm. So, our command so far will be:
+This will let you specify the sha256 hashing algorithm:
 ```python
 patchyhash /root/shapass.txt /root/wordlists/rockyou.txt --hash_type sha256
 ```
