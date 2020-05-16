@@ -1,6 +1,6 @@
 ---
 title: "Build a Neural Network with TensorFlow"
-date: 2019-08-20
+date: 2020-05-15
 tags: [Advanced Projects, Machine Learning, Python]
 header:
   image: "images/tensor.jpg"
