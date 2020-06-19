@@ -121,7 +121,7 @@ author:
       # url: "https://your-website.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://gist.github.com/Patchyst"
+      url: "https://github.com/Patchyst"
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://www.instagram.com/yungpstory/"
