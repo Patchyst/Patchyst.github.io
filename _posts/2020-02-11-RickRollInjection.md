@@ -24,6 +24,21 @@ A Keyboard injector is a Bad USB programmed to initiate keystrokes at superhuman
 
 One such device is the [Malduino](https://maltronics.com/collections/malduinos) by Maltronics. As the name suggests the Malduino is a "bad" Arduino setup using [Arduino's IDE](https://www.arduino.cc/en/main/software).
 
-The Malduino Elite has 4 switches corresponding to binary values 1 and 0. Depending on the switch combination a particular script will execute. I.g. 1010.txt for gaining a reverse shell and 1110.txt for DNS poisoning.  
+The Malduino Elite has 4 switches corresponding to binary values 1 and 0. Depending on the switch combination a particular script stored on the micro sd card will execute. I.g. 1010.txt for gaining a reverse shell and 1110.txt for DNS poisoning.  
 ![malduino](/images/malduino_img.jpg){:class="img-responsive"}
-The Malduino uses a scripting language called ducky script (lines are executed successively). 
+## Ducky Script Basics
+The Malduino uses a scripting language called ducky script (lines are executed successively).
+### DELAY
+DELAY adds a pause in the script specified in milliseconds. This is useful if you want to give a process time to fisnish before executing the next line. The following is a delay of 1 second:
+```
+DELAY 1000
+```
+### STRING
+The STRING keyword is used to simulate characters typed on the keyboard. For example: 
+```
+STRING Hello!
+```
+would simulate the user typing "Hello!" on the keyboard. This will become useful once you need to navigate cmd/terminal or a built in search such as Spotlight.
+### GUI
+
+
