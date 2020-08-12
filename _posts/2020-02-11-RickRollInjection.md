@@ -23,3 +23,4 @@ A Keyboard injector is a Bad USB programmed to initiate keystrokes at superhuman
 ![Keyboard-Injector](/images/injector.gif){:class="img-responsive"}
 
 One such device is the [Malduino](https://maltronics.com/collections/malduinos) by Maltronics. As the name suggests the Malduino is a "bad" Arduino setup using [Arduino's IDE](https://www.arduino.cc/en/main/software).
+![malduino](/images/malduino_img.jpg){:class="img-responsive"}
