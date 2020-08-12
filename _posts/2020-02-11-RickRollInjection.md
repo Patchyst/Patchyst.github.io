@@ -29,16 +29,27 @@ The Malduino Elite has 4 switches corresponding to binary values 1 and 0. Depend
 ## Ducky Script Basics
 The Malduino uses a scripting language called ducky script (lines are executed successively).
 ### DELAY
-DELAY adds a pause in the script specified in milliseconds. This is useful if you want to give a process time to fisnish before executing the next line. The following is a delay of 1 second:
+DELAY adds a pause in milliseconds to the script. This is useful if you want to give a process time to finish before executing the next line. The following is a delay of 1 second:
 ```
 DELAY 1000
 ```
-### STRING
-The STRING keyword is used to simulate characters typed on the keyboard. For example: 
+### STRING and ENTER
+STRING is used to simulate characters typed on the keyboard. For example, 
 ```
 STRING Hello!
 ```
-would simulate the user typing "Hello!" on the keyboard. This will become useful once you need to navigate cmd/terminal or a built in search such as Spotlight.
+would simulate the user typing "Hello!" on the keyboard. 
+ENTER emulates the enter key.
+```
+STRING Hello!
+ENTER
+```
+This will become useful once you need to navigate cmd/terminal or a built in search such as Spotlight.
 ### GUI
-
-
+GUI simulates the Super key(Mac: command Windows: Windows key). With this you gain access to various keyboard shortcuts.
+```
+GUI r
+STRING cmd
+ENTER
+```
+This script uses the Windows-key+r shortcut to pull up the Windows' “Run” box, type out cmd, and hit enter.
