@@ -22,6 +22,8 @@ A Keyboard injector is a Bad USB programmed to initiate keystrokes at superhuman
 
 ![Keyboard-Injector](/images/injector.gif){:class="img-responsive"}
 
-One such device is the [Malduino](https://maltronics.com/collections/malduinos) by Maltronics. As the name suggests the Malduino is a "bad" Arduino setup using [Arduino's IDE](https://www.arduino.cc/en/main/software). \n
+One such device is the [Malduino](https://maltronics.com/collections/malduinos) by Maltronics. As the name suggests the Malduino is a "bad" Arduino setup using [Arduino's IDE](https://www.arduino.cc/en/main/software).
+
 The Malduino Elite has 4 switches corresponding to binary values 1 and 0. Depending on the switch combination a particular script will execute. I.g. 1010.txt for gaining a reverse shell and 1110.txt for DNS poisoning.  
 ![malduino](/images/malduino_img.jpg){:class="img-responsive"}
+The Malduino uses a scripting language called ducky script (lines are executed successively). 
