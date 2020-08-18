@@ -53,3 +53,22 @@ STRING cmd
 ENTER
 ```
 This script uses the Windows-key+r shortcut to pull up the Windows' “Run” box, type out cmd, and hit enter.
+## The Script:
+Firstly, access a shell/cmd using the methods mentioned above. For mac, access spotlight then navigate to the terminal with the proper delay times (tweak delays so script runs as fast as possible). 
+```
+DELAY 2000
+GUI space
+DELAY 500
+STRING terminal
+DELAY 500
+ENTER
+```
+Next access a bash shell (in case bash isn't the default shell) so we can quickly write out the browser bomb script
+*The delays are too long. Make sure to tweak them for efficiency*
+```
+DELAY 500
+STRING bash
+DELAY 500
+ENTER
+```
+
