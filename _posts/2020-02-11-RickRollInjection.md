@@ -1,5 +1,5 @@
 ---
-title: "Introduction to Keyboard Injectors with Rick Astley (UNFINISHED)"
+title: "Introduction to Keyboard Injectors with Rick Astley"
 date: 2020-02-11
 tags: [Advanced Projects, Bash]
 header:
