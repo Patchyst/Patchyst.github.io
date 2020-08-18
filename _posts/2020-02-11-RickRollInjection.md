@@ -71,4 +71,37 @@ STRING bash
 DELAY 500
 ENTER
 ```
+Create an index variable and a while loop that uses -le (less than) to decide how many browsers to open. For now I'm using 5 meaning 5 browsers will open. 
+```
+STRING N=0
+DELAY 500
+ENTER
+DELAY 500
+STRING while [ $N -le 5 ]; do
+DELAY 500
+ENTER
+```
+*Use to run an infinite loop*
 
+```
+STRING while: do
+```
+Use **open** to open a browser with the specified link. With Windows, open internet explorer then enter the link.
+Lastly, add to the index variable and end the while loop.
+```
+DELAY 500
+STRING open https://www.youtube.com/watch?v=dQw4w9WgXcQ
+DELAY 500
+ENTER
+DELAY 500
+STRING N=$(( $N + 1 ))
+DELAY 500
+ENTER
+DELAY 500
+STRING done
+DELAY 500
+ENTER
+DELAY 500
+```
+### Next
+Check out gaining a reverse shell on any unattended computer with Malduino
