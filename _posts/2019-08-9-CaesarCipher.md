@@ -19,14 +19,14 @@ To begin, we have to make two variables one for the key and one for the message.
 message = input("Enter the message you want to be encoded: ")
 x = int(input("Enter a shift key: "))
 ```
-Now we will create a for loop that iterates through the message variable and encrypts each letter one by one and outputs them.
+Now we will create a for loop that iterates through the message variable and enciphers each letter one by one and outputs them.
 ```python
 message = input("Enter the message you want to be encoded: ")
 x = int(input("Enter a shift key: "))
 for i in message:
   print(chr(ord(i)+x), end = "")
 ```
-Inside the for loop the index value of the character going through the loop has the shift key added to it then the chr() function finds the corresponding character to shifted number. Lastly, the end = "" just makes it so each of the letter prints on the same line. Play around entering messages you want to be encoded and you will get all kinds of random letters and symbols that would be extremely hard to decrypt without the key.
+Inside the for loop the index value of the character going through the loop has the shift key added to it then the chr() function finds the corresponding character to shifted number. Lastly, the end = "" just makes it so each of the letter prints on the same line. Play around entering messages you want to be enciphered and you will get all kinds of random letters and symbols that would be extremely hard to decode by hand without the key.
 
 
 # Now What?
