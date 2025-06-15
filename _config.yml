@@ -39,7 +39,7 @@ collections:
   posts:
     title: Blog # Needed for Siteleaf
     output: true
-    description: "This is merely a demo, find out more [about Garth](about)" # The post list page content
+    description: "This is a demo. It is incomplete" # The post list page content
 
 # 6. Jekyll collections settings
 defaults:
