@@ -60,7 +60,7 @@ defaults:
 encoding: utf-8 # Make sure the encoding is right
 title: "Patchyst" # Site name or title
 logo: "/assets/logo.svg" # Site logo
-favicon: "/assets/trong_bikes.png" # Uncomment to add custom favicon, or leave as is to use site logo
+favicon: "/assets/tron_bikes.png" # Uncomment to add custom favicon, or leave as is to use site logo
 description: "A really basic theme for Jekyll, using the official Jekyll theme implementation" # Site description and default description
 url: "https://patchyst.github.io" # Site url
 baseurl: ""
