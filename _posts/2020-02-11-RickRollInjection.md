@@ -79,7 +79,7 @@ DELAY 500
 STRING while [ $N -le 5 ]; do
 DELAY 500
 ENTER
-```
+``
 *Use this to open an endless amount of brower windows*
 
 ```
