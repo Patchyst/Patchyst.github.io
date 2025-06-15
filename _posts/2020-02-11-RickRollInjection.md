@@ -29,24 +29,24 @@ The Malduino uses a scripting language called ducky script.
 
 ### DELAY
 DELAY adds a pause in milliseconds to the script. This is useful if you want to give a process time to finish before executing the next line. The following is a delay of 1 second:
-```bash
+```batch
 DELAY 1000
 ```
 ### STRING and ENTER
 STRING is used to simulate characters typed on the keyboard. For example, 
-```bash
+```batch
 STRING Hello!
 ```
 would simulate the user typing "Hello!" on the keyboard. 
 ENTER emulates the enter key.
-```bash
+```batch
 STRING Hello!
 ENTER
 ```
 This will become useful once you need to navigate cmd/terminal or a built in search such as Spotlight.
 ### GUI
 GUI simulates the Super key. This would be the command key on Mac and the Windows key on Windows. With this you gain access to various keyboard shortcuts.
-```bash
+```batch
 GUI r
 STRING cmd
 ENTER
@@ -54,7 +54,7 @@ ENTER
 This script uses the Windows-key+r shortcut to pull up the Windows' “Run” box, type out cmd, and hit enter.
 ## The Script:
 Firstly, access a shell using the methods mentioned above. For Mac, access spotlight then navigate to the terminal with the proper delay times (tweak delays so script runs as fast as possible). 
-```bash
+```batch
 DELAY 2000
 GUI space
 DELAY 500
@@ -64,14 +64,14 @@ ENTER
 ```
 Next, access a bash shell, in case bash isn't the default shell, and write out the script
 *The delays are too long. Make sure to tweak them for efficiency*
-```bash
+```batch
 DELAY 500
 STRING bash
 DELAY 500
 ENTER
 ```
 Create a loop to successively open browser windows, where `N` is the number of Windows to open.
-```bash
+```batch
 STRING N=0
 DELAY 500
 ENTER
@@ -86,7 +86,7 @@ ENTER
 STRING while: do
 ```
 Use `open` in bash to open a browser with the specified link. The process may be slightly different on Windows, but the idea is still the same.
-{% highlight bash %}
+```batch
 DELAY 500
 STRING open https://www.youtube.com/watch?v=dQw4w9WgXcQ
 DELAY 500
@@ -100,4 +100,4 @@ STRING done
 DELAY 500
 ENTER
 DELAY 500
-{% endhighlight %}
+```
