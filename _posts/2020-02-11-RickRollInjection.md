@@ -5,8 +5,6 @@ category: "hardware"
 excerpt: "Launch a Rick Roll bomb on your computer today!"
 ---
 
-
-
 # DISCLAIMER:
 Code in this project utilizes your browser for purposes it was not intended for. Do not plug a bad USB into any computer without the proper permissions from its owner.
 
