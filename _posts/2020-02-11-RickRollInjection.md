@@ -82,11 +82,11 @@ ENTER
 ```
 *Use this to open an endless amount of brower windows*
 
-```bash
+```
 STRING while: do
 ```
 Use `open` in bash to open a browser with the specified link. The process may be slightly different on Windows, but the idea is still the same.
-```bash
+{% highlight bash %}
 DELAY 500
 STRING open https://www.youtube.com/watch?v=dQw4w9WgXcQ
 DELAY 500
@@ -100,4 +100,4 @@ STRING done
 DELAY 500
 ENTER
 DELAY 500
-```
+{% endhighlight %}

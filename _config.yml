@@ -56,13 +56,6 @@ defaults:
     values:
       layout: post # Default layout
 
-highlighter: rouge
-markdown: kramdown
-kramdown:
-  syntax_highlighter: rouge
-  syntax_highlighter_opts:
-    guess_lang: false
-
 # 7. Site settings
 encoding: utf-8 # Make sure the encoding is right
 title: "Patchyst" # Site name or title
